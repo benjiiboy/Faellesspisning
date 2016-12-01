@@ -11,7 +11,7 @@
         <Grid HorizontalAlignment="Left" Height="400" Margin="30,30,0,0" VerticalAlignment="Top" Width="300">
             <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Husnummer" VerticalAlignment="Top"/>
             <TextBlock x:Name="Pris" HorizontalAlignment="Left" Margin="0,283,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" Height="50" Width="180"/>
-            <ListView x:Name="listView" BorderThickness="2" BorderBrush="Black" Margin="0,50,-14,150"/>
+            <ListView x:Name="listView" BorderThickness="2" BorderBrush="Black" Margin="0,50,0,150"/>
         </Grid>
 
     </Grid>

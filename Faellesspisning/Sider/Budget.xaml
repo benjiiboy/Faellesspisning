@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Faellesspisning.Sider.Budget"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Faellesspisning.Sider"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="400" Margin="30,30,0,0" VerticalAlignment="Top" Width="300">
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Husnummer" VerticalAlignment="Top"/>
+            <TextBlock x:Name="Pris" HorizontalAlignment="Left" Margin="0,283,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" Height="50" Width="180"/>
+            <ListView x:Name="listView" BorderThickness="2" BorderBrush="Black" Margin="0,50,0,150"/>
+        </Grid>
+
+    </Grid>
+</Page>

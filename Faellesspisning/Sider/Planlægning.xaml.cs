@@ -31,5 +31,25 @@ namespace Faellesspisning.Sider
         {
 
         }
+
+        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock2_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock3_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

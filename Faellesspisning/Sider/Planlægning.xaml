@@ -34,13 +34,55 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Mandag" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
-            <TextBlock x:Name="textBlock1" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tirsdag" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
-            <TextBlock x:Name="textBlock2" Grid.Column="3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Onsdag" VerticalAlignment="Top" Height="97" Width="149" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
-            <TextBlock x:Name="textBlock3" Grid.Column="4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Torsdag" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
-            <TextBlock x:Name="textBlock4" Grid.Column="5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fredag" VerticalAlignment="Top" Height="97" Width="149" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
-            <TextBlock x:Name="textBlock5" Grid.Column="6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Lørdag" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
-            <TextBlock x:Name="textBlock6" Grid.Column="7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Søndag" VerticalAlignment="Top" Height="97" Width="149" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
+            <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2">
+                <Run/>
+                <LineBreak/>
+                <Run/>
+                <LineBreak/>
+                <Run Text="Mandag"/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock1" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2">
+                <Run/>
+                <LineBreak/>
+                <Run/>
+                <LineBreak/>
+                <Run Text="Tirsdag"/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock2" Grid.Column="3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="149" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2">
+                <Run/>
+                <LineBreak/>
+                <Run/>
+                <LineBreak/>
+                <Run Text="Onsdag"/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock3" Grid.Column="4" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2">
+                <Run/>
+                <LineBreak/>
+                <Run/>
+                <LineBreak/>
+                <Run Text="Torsdag"/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock4" Grid.Column="5" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="149" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2">
+                <Run/>
+                <LineBreak/>
+                <Run/>
+                <LineBreak/>
+                <Run Text="Fredag"/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock5" Grid.Column="6" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2">
+                <Run/>
+                <LineBreak/>
+                <Run/>
+                <LineBreak/>
+                <Run Text="Lørdag"/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock6" Grid.Column="7" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="149" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2">
+                <Run/>
+                <LineBreak/>
+                <Run/>
+                <LineBreak/>
+                <Run Text="Søndag"/>
+            </TextBlock>
             <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="87" Width="140" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
             <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="98" Width="147" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>
             <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="Oprydning" VerticalAlignment="Top" Height="97" Width="150" TextAlignment="Center" LineHeight="9" Margin="2,5,2,2"/>

@@ -36,5 +36,10 @@ namespace Faellesspisning
         {
 
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Faellesspisning
 {
-    class HusInfo
+   public class HusInfo
     {
         //instance field
         private double TotalDagsPris;
@@ -20,12 +20,12 @@ namespace Faellesspisning
         private int AntalBabyIHusstand;
 
         public string HusNummer;
-        
+
         //Properties
 
 
         //constuctor
-        public HusInfo(string HusNummer,int AntalVoksneIHusstand, int AntalTeenagerIHusstand ,int AntalBarnIHusstand, int AntalBabyIHusstand)
+        public HusInfo(string HusNummer, int AntalVoksneIHusstand, int AntalTeenagerIHusstand, int AntalBarnIHusstand, int AntalBabyIHusstand)
         {
             this.HusNummer = HusNummer;
             this.AntalVoksneIHusstand = 0;

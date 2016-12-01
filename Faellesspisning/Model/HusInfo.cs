@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_til_Eksamen_1R.Model
+namespace Faellesspisning
 {
     class HusInfo
     {

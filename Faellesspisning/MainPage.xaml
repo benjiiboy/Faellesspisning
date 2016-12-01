@@ -8,17 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="UgeOversigt" HorizontalAlignment="Left" Height="349" Margin="79,198,0,0" VerticalAlignment="Top" Width="445" BorderThickness="2" BorderBrush="Black" RenderTransformOrigin="0.5,0.5"/>
+        <ListView x:Name="UgeOversigt" HorizontalAlignment="Left" Height="349" Margin="37,106,0,0" VerticalAlignment="Top" Width="445" BorderThickness="2" BorderBrush="Black" RenderTransformOrigin="0.5,0.5"/>
         <ListView x:Name="DeltagerOversigt" HorizontalAlignment="Left" Height="349" Margin="1021,106,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black" SelectionChanged="listView1_SelectionChanged"/>
         <ListView x:Name="KokkeOversigt" HorizontalAlignment="Left" Height="157" Margin="1021,514,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
         <TextBlock x:Name="DeltagerOverskrift" HorizontalAlignment="Left" Margin="1021,46,0,0" TextWrapping="Wrap" Text="Deltager" VerticalAlignment="Top" Height="55" Width="214" FontSize="30" TextAlignment="Center" SelectionChanged="DeltagerOverskrift_SelectionChanged"/>
-        <TextBlock x:Name="KokkeOverskrfit" HorizontalAlignment="Left" Margin="1021,460,0,0" TextWrapping="Wrap" Text="Kokke" VerticalAlignment="Top" Height="49" Width="214" SelectionChanged="textBlock_SelectionChanged" TextAlignment="Center" FontSize="30"/>
-        <Button x:Name="button" Content="Planlæg&#xD;&#xA;" HorizontalAlignment="Left" Margin="37,552,0,0" VerticalAlignment="Top" Height="41" Width="142"/>
-        <Button x:Name="button1" Content="Tilføj" HorizontalAlignment="Left" Margin="860,129,0,0" VerticalAlignment="Top" Click="button1_Click" Width="132"/>
-        <Button x:Name="button2" Content="Slet" HorizontalAlignment="Left" Margin="860,166,0,0" VerticalAlignment="Top" Width="132"/>
-        <Button x:Name="button3" Content="Rediger" HorizontalAlignment="Left" Margin="860,228,0,0" VerticalAlignment="Top" Width="132"/>
-        <Button x:Name="button4" Content="Beregn pris" HorizontalAlignment="Left" Margin="860,423,0,0" VerticalAlignment="Top" Width="132"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="452,46,0,0" TextWrapping="Wrap" Text="Databinding til ugenr" VerticalAlignment="Top" Height="32" Width="380" SelectionChanged="textBlock_SelectionChanged_1"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="149,129,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" SelectionChanged="textBlock1_SelectionChanged" Height="60" Width="251"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="136,46,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
     </Grid>
 </Page>

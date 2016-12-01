@@ -8,9 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="UgeOversigt" HorizontalAlignment="Left" Height="334" Margin="25,106,0,0" VerticalAlignment="Top" Width="445" BorderThickness="2" BorderBrush="Black"/>
-        <ListView x:Name="DeltagerOversigt" HorizontalAlignment="Left" Height="334" Margin="1021,106,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black" SelectionChanged="listView1_SelectionChanged"/>
-        <ListView x:Name="KokkeOversigt" HorizontalAlignment="Left" Height="157" Margin="1021,514,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
-        <TextBlock x:Name="DeltagerOverskrift" HorizontalAlignment="Left" Margin="1021,46,0,0" TextWrapping="Wrap" Text="Deltager" VerticalAlignment="Top" Height="55" Width="214" FontSize="30" TextAlignment="Center" SelectionChanged="DeltagerOverskrift_SelectionChanged"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="334" Margin="25,106,0,0" VerticalAlignment="Top" Width="445" BorderThickness="2" BorderBrush="Black"/>
+        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="334" Margin="955,106,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
+        <ListView x:Name="listView2" HorizontalAlignment="Left" Height="157" Margin="1021,514,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="1021,46,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="55" Width="214"/>
     </Grid>
 </Page>

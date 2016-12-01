@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Faellesspisning.Model
 {
-    class HusListe : ObservableCollection<HusInfo>
+   public class HusListe : ObservableCollection<HusInfo>
     {
         public HusListe() :base()
         {

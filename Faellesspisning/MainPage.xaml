@@ -13,7 +13,7 @@
         <ListView x:Name="KokkeOversigt" HorizontalAlignment="Left" Height="157" Margin="1021,514,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
         <TextBlock x:Name="DeltagerOverskrift" HorizontalAlignment="Left" Margin="1021,46,0,0" TextWrapping="Wrap" Text="Deltager" VerticalAlignment="Top" Height="55" Width="214" FontSize="30" TextAlignment="Center" SelectionChanged="DeltagerOverskrift_SelectionChanged"/>
         <TextBlock x:Name="KokkeOverskrfit" HorizontalAlignment="Left" Margin="1021,460,0,0" TextWrapping="Wrap" Text="Kokke" VerticalAlignment="Top" Height="49" Width="214" SelectionChanged="textBlock_SelectionChanged" TextAlignment="Center" FontSize="30"/>
-        <Button x:Name="button" Content="Planlæg&#xD;&#xA;" HorizontalAlignment="Left" Margin="37,552,0,0" VerticalAlignment="Top" Height="41" Width="142"/>
+        <Button x:Name="button" Content="Planlæg&#xD;&#xA;" HorizontalAlignment="Left" Margin="79,552,0,0" VerticalAlignment="Top" Height="41" Width="142"/>
         <Button x:Name="button1" Content="Tilføj" HorizontalAlignment="Left" Margin="860,129,0,0" VerticalAlignment="Top" Click="button1_Click" Width="132"/>
         <Button x:Name="button2" Content="Slet" HorizontalAlignment="Left" Margin="860,166,0,0" VerticalAlignment="Top" Width="132"/>
         <Button x:Name="button3" Content="Rediger" HorizontalAlignment="Left" Margin="860,228,0,0" VerticalAlignment="Top" Width="132"/>

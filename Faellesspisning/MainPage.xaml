@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="334" Margin="25,106,0,0" VerticalAlignment="Top" Width="445" BorderThickness="2" BorderBrush="Black"/>
-        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="334" Margin="1021,106,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
+        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="334" Margin="955,106,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
         <ListView x:Name="listView2" HorizontalAlignment="Left" Height="157" Margin="1021,514,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="1021,46,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="55" Width="214"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="1358,573,-87,-33" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>

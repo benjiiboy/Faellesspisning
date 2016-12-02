@@ -11,7 +11,8 @@ namespace Faellesspisning.Model
     {
         public HusListe() :base()
         {
-            this.Add(new HusInfo("69", 2, 1, 1, 1));
+            this.Add(new HusInfo());
+            //TODO: tilføj set metoder i husinfo
         }
     }
 }

@@ -25,7 +25,8 @@ namespace Faellesspisning
 
 
         //constuctor
-        public HusInfo(string HusNummer, int AntalVoksneIHusstand, int AntalTeenagerIHusstand, int AntalBarnIHusstand, int AntalBabyIHusstand)
+        //string HusNummer, int AntalVoksneIHusstand, int AntalTeenagerIHusstand, int AntalBarnIHusstand, int AntalBabyIHusstand
+        public HusInfo()
         {
             this.HusNummer = HusNummer;
             this.AntalVoksneIHusstand = 0;

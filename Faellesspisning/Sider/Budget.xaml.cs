@@ -26,5 +26,10 @@ namespace Faellesspisning.Sider
         {
             this.InitializeComponent();
         }
+
+        private void Pris_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

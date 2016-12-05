@@ -11,7 +11,7 @@ using Windows.Storage;
 namespace Faellesspisning.Viewmodel
 {
     class HusViewmodel : INotifyPropertyChanged
-    {
+    { 
         //props til knapper 
         public Model.HusListe HList { get; set; }
         public HusInfo Newhus { get; set; }

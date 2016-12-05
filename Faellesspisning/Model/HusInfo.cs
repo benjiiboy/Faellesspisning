@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 
 namespace Faellesspisning
 {
-    class HusInfo
+   public class HusInfo
     {
         //instance field
-        private double TotalDagsPris;
-        private double TotalAntalDeltagere;
-        private double PrisPerPerson;
-        private double PrisPerHusstand;
-        private double AntalPersonerIHusstand;
-        private int AntalVoksneIHusstand;
-        private int AntalTeenagerIHusstand;
-        private int AntalBarnIHusstand;
-        private int AntalBabyIHusstand;
+        public double TotalDagsPris;
+        public double TotalAntalDeltagere;
+        public double PrisPerPerson;
+        public double PrisPerHusstand;
+        public double AntalPersonerIHusstand;
+        public int AntalVoksneIHusstand;
+        public int AntalTeenagerIHusstand;
+        public int AntalBarnIHusstand;
+        public int AntalBabyIHusstand;
 
         public string HusNummer;
-        
+
         //Properties
 
 
         //constuctor
-        public HusInfo(string HusNummer,int AntalVoksneIHusstand, int AntalTeenagerIHusstand ,int AntalBarnIHusstand, int AntalBabyIHusstand)
+        //string HusNummer, int AntalVoksneIHusstand, int AntalTeenagerIHusstand, int AntalBarnIHusstand, int AntalBabyIHusstand
+        public HusInfo()
         {
             this.HusNummer = HusNummer;
             this.AntalVoksneIHusstand = 0;

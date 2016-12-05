@@ -1,10 +1,11 @@
 ﻿<Page
-    x:Class="Faellesspisning.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Faellesspisning"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Viewmodel="using:Faellesspisning.Viewmodel"
+    x:Class="Faellesspisning.MainPage"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -33,6 +34,9 @@
 
             <PivotItem Header="Deltagere">
                 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <Grid.DataContext>
+                        <Viewmodel:HusViewmodel/>
+                    </Grid.DataContext>
                     <ListView x:Name="listView" HorizontalAlignment="Left" Height="559" Margin="676,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
                     <ListView x:Name="listView1" HorizontalAlignment="Left" Height="559" Margin="985,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
                     <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="676,57,0,0" TextWrapping="Wrap" Text="Deltager liste" VerticalAlignment="Top" Width="157" FontSize="20"/>
@@ -40,11 +44,11 @@
                     <Button x:Name="button" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,497,0,0" VerticalAlignment="Top" Height="50" Width="80"/>
                     <Button x:Name="button1" Content="Slet" HorizontalAlignment="Left" Margin="217,497,0,0" VerticalAlignment="Top" Height="50" Width="80"/>
                     <Button x:Name="button2" Content="Rediger" HorizontalAlignment="Left" Margin="121,573,0,0" VerticalAlignment="Top" Height="50" Width="176"/>
-                    <TextBox x:Name="textBox88" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
-                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="Antal Voksne" VerticalAlignment="Top" Width="176"/>
-                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="Unge 7-15 år" VerticalAlignment="Top" Width="176"/>
-                    <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="121,261,0,0" TextWrapping="Wrap" Text="Unge 3-6 år" VerticalAlignment="Top" Width="176"/>
-                    <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="121,309,0,0" TextWrapping="Wrap" Text="Under 3 år" VerticalAlignment="Top" Width="176"/>
+                    <TextBox x:Name="textBox88" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="{Binding HList[0].HusNummer, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalVoksneIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Antal Voksne"/>
+                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalTeenagerIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 7-15 år"/>
+                    <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="121,261,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalBarnIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 3-6 år"/>
+                    <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="121,309,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalBabyIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Under 3 år"/>
                     <CheckBox x:Name="checkBox" Content="Kok" HorizontalAlignment="Left" Margin="121,360,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="checkBox1" Content="Hjælper" HorizontalAlignment="Left" Margin="121,392,0,0" VerticalAlignment="Top"/>
 

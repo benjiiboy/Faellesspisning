@@ -65,7 +65,7 @@ namespace Faellesspisning.Viewmodel
             //ie TempKlasseinfo.FirstName = NewElev.FirstName;
 
 
-
+             
             HList.Remove(temphusinfo);
         }
 

@@ -61,11 +61,11 @@ namespace Faellesspisning.Viewmodel
         public void AddNewHus()
         {
             HusInfo temphusinfo = new HusInfo();
-            //TODO: der skal sættes props ind
-            //ie TempKlasseinfo.FirstName = NewElev.FirstName;
-
-
-             
+            temphusinfo.AntalBabyIHusstand = Newhus.AntalBabyIHusstand;
+            temphusinfo.AntalBarnIHusstand = Newhus.AntalBarnIHusstand;
+            temphusinfo.AntalTeenagerIHusstand = Newhus.AntalTeenagerIHusstand;
+            temphusinfo.AntalVoksneIHusstand = Newhus.AntalVoksneIHusstand;
+         
             HList.Remove(temphusinfo);
         }
 

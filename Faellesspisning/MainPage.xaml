@@ -8,17 +8,119 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="UgeOversigt" HorizontalAlignment="Left" Height="349" Margin="79,166,0,0" VerticalAlignment="Top" Width="445" BorderThickness="2" BorderBrush="Black" RenderTransformOrigin="0.5,0.5"/>
-        <ListView x:Name="DeltagerOversigt" HorizontalAlignment="Left" Height="349" Margin="1021,106,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black" />
-        <ListView x:Name="KokkeOversigt" HorizontalAlignment="Left" Height="157" Margin="1021,514,0,0" VerticalAlignment="Top" Width="214" BorderThickness="2" BorderBrush="Black"/>
-        <TextBlock x:Name="DeltagerOverskrift" HorizontalAlignment="Left" Margin="1021,46,0,0" TextWrapping="Wrap" Text="Deltager" VerticalAlignment="Top" Height="55" Width="214" FontSize="30" TextAlignment="Center" />
-        <TextBlock x:Name="KokkeOverskrfit" HorizontalAlignment="Left" Margin="1021,460,0,0" TextWrapping="Wrap" Text="Kokke" VerticalAlignment="Top" Height="49" Width="214"  TextAlignment="Center" FontSize="30"/>
-        <Button x:Name="ForsidePlanlæg" Content="Planlæg&#xD;&#xA;" HorizontalAlignment="Left" Margin="79,552,0,0" VerticalAlignment="Top" Height="41" Width="142"/>
-        <Button x:Name="ForsideTilføjKnap" Content="Tilføj" HorizontalAlignment="Left" Margin="860,129,0,0" VerticalAlignment="Top" Width="132"/>
-        <Button x:Name="ForsideSletKnap" Content="Slet" HorizontalAlignment="Left" Margin="860,166,0,0" VerticalAlignment="Top" Width="132"/>
-        <Button x:Name="ForsideRedigerKnap" Content="Rediger" HorizontalAlignment="Left" Margin="860,228,0,0" VerticalAlignment="Top" Width="132"/>
-        <Button x:Name="ForsideBeregnPris" Content="Beregn pris" HorizontalAlignment="Left" Margin="860,423,0,0" VerticalAlignment="Top" Width="132"/>
-        <TextBlock x:Name="UgeNROverskrift" HorizontalAlignment="Left" Margin="452,46,0,0" TextWrapping="Wrap" Text="Databinding til ugenr" VerticalAlignment="Top" Height="32" Width="380"/>
-        <TextBlock x:Name="MenuTextBlock" HorizontalAlignment="Left" Margin="149,129,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top"  Height="60" Width="251"/>
+        <Pivot x:Name="Startside" Title="Fællesspisning version 0.001">
+
+            <PivotItem Header="Menu">
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+                    <TextBlock x:Name="Mandag" HorizontalAlignment="Left" Margin="172,137,0,0" TextWrapping="Wrap" Text="Mandag" VerticalAlignment="Top" Height="40" Width="169" FontSize="20"/>
+                    <TextBlock x:Name="Tirsdag" HorizontalAlignment="Left" Margin="172,186,0,0" TextWrapping="Wrap" Text="Tirsdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Onsdag" HorizontalAlignment="Left" Margin="172,235,0,0" TextWrapping="Wrap" Text="Onsdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Torsdag" HorizontalAlignment="Left" Margin="172,284,0,0" TextWrapping="Wrap" Text="Torsdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Fredag" HorizontalAlignment="Left" Margin="172,333,0,0" TextWrapping="Wrap" Text="Fredag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Lørdag" HorizontalAlignment="Left" Margin="172,382,0,0" TextWrapping="Wrap" Text="Lørdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Søndag" HorizontalAlignment="Left" Margin="172,431,0,0" TextWrapping="Wrap" Text="Søndag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Mandag_Copy" HorizontalAlignment="Left" Margin="408,137,0,0" TextWrapping="Wrap" Text="Hakkebøffer med bearnaise samt ovnkartofler, " VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Mandag_Copy1" HorizontalAlignment="Left" Margin="408,186,0,0" TextWrapping="Wrap" Text="Flødekartofler" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Mandag_Copy2" HorizontalAlignment="Left" Margin="408,235,0,0" TextWrapping="Wrap" Text="Smørrebrød" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Mandag_Copy3" HorizontalAlignment="Left" Margin="408,284,0,0" TextWrapping="Wrap" Text="hjemmelavet pizza" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Mandag_Copy4" HorizontalAlignment="Left" Margin="408,333,0,0" TextWrapping="Wrap" Text="Pomfritter" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Mandag_Copy5" HorizontalAlignment="Left" Margin="408,382,0,0" TextWrapping="Wrap" Text="Flæskesteg med brunkartofler" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="Mandag_Copy6" HorizontalAlignment="Left" Margin="408,431,0,0" TextWrapping="Wrap" Text="Mad pandekager" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Deltagere">
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <ListView x:Name="listView" HorizontalAlignment="Left" Height="559" Margin="676,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
+                    <ListView x:Name="listView1" HorizontalAlignment="Left" Height="559" Margin="985,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
+                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="676,57,0,0" TextWrapping="Wrap" Text="Deltager liste" VerticalAlignment="Top" Width="157" FontSize="20"/>
+                    <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="985,57,0,0" TextWrapping="Wrap" Text="Kokke &amp; Hjælpere" VerticalAlignment="Top" Width="181" Height="25" FontSize="20"/>
+                    <Button x:Name="button" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,497,0,0" VerticalAlignment="Top" Height="50" Width="80"/>
+                    <Button x:Name="button1" Content="Slet" HorizontalAlignment="Left" Margin="217,497,0,0" VerticalAlignment="Top" Height="50" Width="80"/>
+                    <Button x:Name="button2" Content="Rediger" HorizontalAlignment="Left" Margin="121,573,0,0" VerticalAlignment="Top" Height="50" Width="176"/>
+                    <TextBox x:Name="textBox88" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="Antal Voksne" VerticalAlignment="Top" Width="176"/>
+                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="Unge 7-15 år" VerticalAlignment="Top" Width="176"/>
+                    <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="121,261,0,0" TextWrapping="Wrap" Text="Unge 3-6 år" VerticalAlignment="Top" Width="176"/>
+                    <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="121,309,0,0" TextWrapping="Wrap" Text="Under 3 år" VerticalAlignment="Top" Width="176"/>
+                    <CheckBox x:Name="checkBox" Content="Kok" HorizontalAlignment="Left" Margin="121,360,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBox1" Content="Hjælper" HorizontalAlignment="Left" Margin="121,392,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Planlægning" Margin="14,-35,10,35">
+                <Grid Height="608" Margin="51,0,44,0">
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="52,53,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="1"/>
+                    <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="52,139,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="2"/>
+                    <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Margin="52,225,0,0" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="3"/>
+                    <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Margin="52,311,0,0" TextWrapping="Wrap" Text="Oprydere" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="4"/>
+                    <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Margin="52,397,0,0" TextWrapping="Wrap" Text="Udlæg (kr.)" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="5"/>
+                    <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Left" Margin="52,483,0,0" TextWrapping="Wrap" Text="Husnr. udlæg" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="6"/>
+                    <TextBlock x:Name="textBlock5765" HorizontalAlignment="Left" Margin="52,10,0,0" TextWrapping="Wrap" Text="Mandag" VerticalAlignment="Top" Height="38" Width="146"/>
+                    <TextBox x:Name="textBox_Copy5" HorizontalAlignment="Left" Margin="203,53,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="1" Grid.Row="1"/>
+                    <TextBox x:Name="textBox_Copy6" HorizontalAlignment="Left" Margin="203,139,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="1" Grid.Row="2"/>
+                    <TextBox x:Name="textBox_Copy7" HorizontalAlignment="Left" Margin="203,225,0,0" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="1" Grid.Row="3"/>
+                    <TextBox x:Name="textBox_Copy8" HorizontalAlignment="Left" Margin="203,311,0,0" TextWrapping="Wrap" Text="Oprydere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="1" Grid.Row="4"/>
+                    <TextBox x:Name="textBox_Copy9" HorizontalAlignment="Left" Margin="203,397,0,0" TextWrapping="Wrap" Text="Udlæg (kr.)" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="1" Grid.Row="5"/>
+                    <TextBox x:Name="textBox_Copy10" HorizontalAlignment="Left" Margin="203,483,0,0" TextWrapping="Wrap" Text="Husnr. udlæg" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="1" Grid.Row="6"/>
+                    <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="203,10,0,0" TextWrapping="Wrap" Text="Tirsdag&#x9;" VerticalAlignment="Top" Height="38" Width="146" Grid.Column="1"/>
+                    <TextBox x:Name="textBox_Copy11" HorizontalAlignment="Left" Margin="354,53,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="2" Grid.Row="1"/>
+                    <TextBox x:Name="textBox_Copy12" HorizontalAlignment="Left" Margin="354,139,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="2" Grid.Row="2"/>
+                    <TextBox x:Name="textBox_Copy13" HorizontalAlignment="Left" Margin="354,225,0,0" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="2" Grid.Row="3"/>
+                    <TextBox x:Name="textBox_Copy14" HorizontalAlignment="Left" Margin="354,311,0,0" TextWrapping="Wrap" Text="Oprydere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="2" Grid.Row="4"/>
+                    <TextBox x:Name="textBox_Copy15" HorizontalAlignment="Left" Margin="354,397,0,0" TextWrapping="Wrap" Text="Udlæg (kr.)" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="2" Grid.Row="5"/>
+                    <TextBox x:Name="textBox_Copy16" HorizontalAlignment="Left" Margin="354,483,0,0" TextWrapping="Wrap" Text="Husnr. udlæg" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="2" Grid.Row="6"/>
+                    <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="354,10,0,0" TextWrapping="Wrap" Text="Onsdag" VerticalAlignment="Top" Height="38" Width="146" Grid.Column="2"/>
+                    <TextBox x:Name="textBox_Copy17" HorizontalAlignment="Left" Margin="505,53,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="3" Grid.Row="1"/>
+                    <TextBox x:Name="textBox_Copy18" HorizontalAlignment="Left" Margin="505,139,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="3" Grid.Row="2"/>
+                    <TextBox x:Name="textBox_Copy19" HorizontalAlignment="Left" Margin="505,225,0,0" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="3" Grid.Row="3"/>
+                    <TextBox x:Name="textBox_Copy20" HorizontalAlignment="Left" Margin="505,311,0,0" TextWrapping="Wrap" Text="Oprydere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="3" Grid.Row="4"/>
+                    <TextBox x:Name="textBox_Copy21" HorizontalAlignment="Left" Margin="505,397,0,0" TextWrapping="Wrap" Text="Udlæg (kr.)" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="3" Grid.Row="5"/>
+                    <TextBox x:Name="textBox_Copy22" HorizontalAlignment="Left" Margin="505,483,0,0" TextWrapping="Wrap" Text="Husnr. udlæg" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="3" Grid.Row="6"/>
+                    <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="505,10,0,0" TextWrapping="Wrap" Text="Torsdag" VerticalAlignment="Top" Height="38" Width="146" Grid.Column="3"/>
+                    <TextBox x:Name="textBox_Copy23" HorizontalAlignment="Left" Margin="656,53,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="4" Grid.Row="1"/>
+                    <TextBox x:Name="textBox_Copy24" HorizontalAlignment="Left" Margin="656,139,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="4" Grid.Row="2"/>
+                    <TextBox x:Name="textBox_Copy25" HorizontalAlignment="Left" Margin="656,225,0,0" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="4" Grid.Row="3"/>
+                    <TextBox x:Name="textBox_Copy26" HorizontalAlignment="Left" Margin="656,311,0,0" TextWrapping="Wrap" Text="Oprydere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="4" Grid.Row="4"/>
+                    <TextBox x:Name="textBox_Copy27" HorizontalAlignment="Left" Margin="656,397,0,0" TextWrapping="Wrap" Text="Udlæg (kr.)" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="4" Grid.Row="5"/>
+                    <TextBox x:Name="textBox_Copy28" HorizontalAlignment="Left" Margin="656,483,0,0" TextWrapping="Wrap" Text="Husnr. udlæg" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="4" Grid.Row="6"/>
+                    <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="656,10,0,0" TextWrapping="Wrap" Text="Fredag" VerticalAlignment="Top" Height="38" Width="146" Grid.Column="4"/>
+                    <TextBox x:Name="textBox_Copy29" HorizontalAlignment="Left" Margin="807,53,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="5" Grid.Row="1"/>
+                    <TextBox x:Name="textBox_Copy30" HorizontalAlignment="Left" Margin="807,139,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="5" Grid.Row="2"/>
+                    <TextBox x:Name="textBox_Copy31" HorizontalAlignment="Left" Margin="807,225,0,0" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="5" Grid.Row="3"/>
+                    <TextBox x:Name="textBox_Copy32" HorizontalAlignment="Left" Margin="807,311,0,0" TextWrapping="Wrap" Text="Oprydere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="5" Grid.Row="4"/>
+                    <TextBox x:Name="textBox_Copy33" HorizontalAlignment="Left" Margin="807,397,0,0" TextWrapping="Wrap" Text="Udlæg (kr.)" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="5" Grid.Row="5"/>
+                    <TextBox x:Name="textBox_Copy34" HorizontalAlignment="Left" Margin="807,483,0,0" TextWrapping="Wrap" Text="Husnr. udlæg" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="5" Grid.Row="6"/>
+                    <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="807,10,0,0" TextWrapping="Wrap" Text="Lørdag" VerticalAlignment="Top" Height="38" Width="146" Grid.Column="5"/>
+                    <TextBox x:Name="textBox_Copy35" HorizontalAlignment="Left" Margin="958,53,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="6" Grid.Row="1"/>
+                    <TextBox x:Name="textBox_Copy36" HorizontalAlignment="Left" Margin="958,139,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="6" Grid.Row="2"/>
+                    <TextBox x:Name="textBox_Copy37" HorizontalAlignment="Left" Margin="958,225,0,0" TextWrapping="Wrap" Text="Hjælpere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="6" Grid.Row="3"/>
+                    <TextBox x:Name="textBox_Copy38" HorizontalAlignment="Left" Margin="958,311,0,0" TextWrapping="Wrap" Text="Oprydere" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="6" Grid.Row="4"/>
+                    <TextBox x:Name="textBox_Copy39" HorizontalAlignment="Left" Margin="958,397,0,0" TextWrapping="Wrap" Text="Udlæg (kr.)" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="6" Grid.Row="5"/>
+                    <TextBox x:Name="textBox_Copy40" HorizontalAlignment="Left" Margin="958,483,0,0" TextWrapping="Wrap" Text="Husnr. udlæg" VerticalAlignment="Top" Height="81" Width="146" Grid.Column="6" Grid.Row="6"/>
+                    <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="958,10,0,0" TextWrapping="Wrap" Text="Søndag" VerticalAlignment="Top" Height="38" Width="146" Grid.Column="6"/>
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Budget">
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <Grid HorizontalAlignment="Left" Height="605" Margin="30,30,0,0" VerticalAlignment="Top" Width="300">
+                        <TextBox x:Name="IndtastHusNr" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Indtast husnummer"/>
+                        <ListView x:Name="ListViewDageSpist" BorderThickness="2" BorderBrush="Black" Margin="0,50,0,150"/>
+                        <TextBlock x:Name="PrintPris" HorizontalAlignment="Left" Margin="0,460,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="44" Width="280" ToolTipService.ToolTip="Her kan du se din pris"/>
+                    </Grid>
+                    <StackPanel HorizontalAlignment="Left" Height="591" Margin="886,44,0,0" VerticalAlignment="Top" Width="354">
+                        <TextBlock x:Name="ViewBeatling" TextWrapping="Wrap" Text="" Height="271"/>
+                        <Image x:Name="image" Height="319" Source="ms-appx:///Assets/mobilepay.png"/>
+                    </StackPanel>
+                    <TextBlock x:Name="textBlock69" HorizontalAlignment="Left" Margin="30,521,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="141" Width="300"/>
+
+                </Grid>
+            </PivotItem>
+
+        </Pivot>
     </Grid>
 </Page>

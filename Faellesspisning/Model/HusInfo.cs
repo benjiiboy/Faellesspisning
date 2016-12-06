@@ -9,7 +9,10 @@ namespace Faellesspisning
    public class HusInfo
     {
 
-        
+        public HusInfo()
+        {
+
+        }
 
 
 
@@ -52,12 +55,13 @@ namespace Faellesspisning
 
 
         //Metode
-
+        
         public double TotalUgePris()
         {
             return Mandag + Tirsdag + Onsdag + Torsdag + Fredag + Lørdag + Søndag;
         }
 
+        
         
 
 

@@ -55,7 +55,7 @@
                 </Grid>
             </PivotItem>
 
-            <PivotItem Header="Planlægning" Margin="14,-35,10,35">
+            <PivotItem Header="Planlægning">
                 <Grid Height="608" Margin="51,0,44,0">
                     <TextBox x:Name="PlanlægningMenuMandag" HorizontalAlignment="Left" Margin="52,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="1" PlaceholderText="Menu"/>
                     <TextBox x:Name="PlanlægningKokMandag" HorizontalAlignment="Left" Margin="52,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="2" PlaceholderText="Kok"/>

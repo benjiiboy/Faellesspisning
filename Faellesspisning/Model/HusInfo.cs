@@ -58,7 +58,7 @@ namespace Faellesspisning
             return Mandag + Tirsdag + Onsdag + Torsdag + Fredag + Lørdag + Søndag;
         }
 
-
+        
 
 
 

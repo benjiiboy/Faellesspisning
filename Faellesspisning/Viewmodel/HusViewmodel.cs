@@ -6,13 +6,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using System.IO;
+using Newtonsoft.Json;
 
 
 namespace Faellesspisning.Viewmodel
 {
     class HusViewmodel : INotifyPropertyChanged
-    { 
+    {
         //props til knapper 
+        private readonly string filnavn = "HusListe.json";
+
         public Model.HusListe HList { get; set; }
         public HusInfo Newhus { get; set; }
 
@@ -22,7 +26,7 @@ namespace Faellesspisning.Viewmodel
         public RelayCommand BeregnPrisCommand { get; set; }
         public RelayCommand PlanlægCommand { get; set; }
 
-
+        StorageFolder localfolder = null;
 
         // public RelayCommand AddHusCommand {get; set; }
 
@@ -81,6 +85,30 @@ namespace Faellesspisning.Viewmodel
             AddHusCommand = new RelayCommand(AddNewHus);
             SletHusCommand = new RelayCommand(Slethus);
 
+            localfolder = ApplicationData.Current.LocalFolder;
         }
+
+        public async void GemDataTilDiskAsync()
+        {
+            string jsonText = this.HList.GetJson();
+            StorageFile file = await localfolder.CreateFileAsync(filnavn, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(file, jsonText);
+        }
+
+        public async void HentDataFraDiskAsync()
+        {
+            this.HList.Clear();
+
+            StorageFile file = await localfolder.GetFileAsync(filnavn);
+            string jsonText = await FileIO.ReadTextAsync(file);
+
+            HList.IndsætJson(jsonText);
+        }
+
+        public void RydlisteData()
+        {
+            this.HList.Clear();
+        }
+
     }
 }

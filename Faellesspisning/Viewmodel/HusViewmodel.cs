@@ -61,6 +61,8 @@ namespace Faellesspisning.Viewmodel
         }
         #endregion
 
+        List<Model.HusInfo> DeltagerListe = new List<Model.HusInfo>();
+        
         //metode til at lave nyt hus
         public void AddNewHus()
         {
@@ -69,7 +71,9 @@ namespace Faellesspisning.Viewmodel
             temphusinfo.AntalBarnIHusstand = Newhus.AntalBarnIHusstand;
             temphusinfo.AntalTeenagerIHusstand = Newhus.AntalTeenagerIHusstand;
             temphusinfo.AntalVoksneIHusstand = Newhus.AntalVoksneIHusstand;
-         
+
+            DeltagerListe.Add(temphusinfo);
+
             HList.Remove(temphusinfo);
         }
 
@@ -110,5 +114,16 @@ namespace Faellesspisning.Viewmodel
             this.HList.Clear();
         }
 
+        public int MandagTilmeldte()
+        {
+            int Antal = 0;
+            foreach (var i in DeltagerListe)
+            {
+                Antal+= i.AntalPersonerIHusstand;
+            }
+            return Antal;
+        }
+
+        
     }
 }

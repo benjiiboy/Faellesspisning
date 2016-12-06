@@ -29,7 +29,7 @@ namespace Faellesspisning.Viewmodel
         StorageFolder localfolder = null;
 
         // public RelayCommand AddHusCommand {get; set; }
-
+        // test commit
 
         #region vores PropertyChangedEventHandler 
         public event PropertyChangedEventHandler PropertyChanged;

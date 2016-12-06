@@ -18,7 +18,7 @@ namespace Faellesspisning.Viewmodel
         private readonly string filnavn = "HusListe.json";
 
         public Model.HusListe HList { get; set; }
-        public HusInfo Newhus { get; set; }
+        public Model.HusInfo Newhus { get; set; }
 
         public RelayCommand AddHusCommand { get; set; }
         public RelayCommand SletHusCommand { get; set; }

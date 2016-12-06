@@ -48,9 +48,9 @@ namespace Faellesspisning.Viewmodel
         // nameof kan altså gå ind på vores Plist fx og finde navn.
         //bliver brugt her med SletElev metode
 
-        public HusInfo SelectedHus;
+        public Model.HusInfo SelectedHus;
 
-        public HusInfo selectedHus
+        public Model.HusInfo selectedHus
         {
             get { return SelectedHus; }
             set
@@ -64,7 +64,7 @@ namespace Faellesspisning.Viewmodel
         //metode til at lave nyt hus
         public void AddNewHus()
         {
-            HusInfo temphusinfo = new HusInfo();
+            Model.HusInfo temphusinfo = new Model.HusInfo();
             temphusinfo.AntalBabyIHusstand = Newhus.AntalBabyIHusstand;
             temphusinfo.AntalBarnIHusstand = Newhus.AntalBarnIHusstand;
             temphusinfo.AntalTeenagerIHusstand = Newhus.AntalTeenagerIHusstand;

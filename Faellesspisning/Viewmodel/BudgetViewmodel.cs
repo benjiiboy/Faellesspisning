@@ -10,11 +10,20 @@ namespace Faellesspisning.Viewmodel
 {
     class BudgetViewmodel : INotifyPropertyChanged
     {
-        
-        public int GetNummer9()
+        //prop
+
+        public string BetalingsTextBlock
         {
-            return 9;
+            get { return DuskalBetalePerHusstand(); }
+            set {  ; }
         }
+
+
+        public string DuskalBetalePerHusstand()
+        {
+            return $"du skal betale Gratis" ;
+        }
+
 
         #region vores PropertyChangedEventHandler 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -123,7 +123,5 @@ namespace Faellesspisning.Viewmodel
             }
             return Antal;
         }
-
-        
     }
 }

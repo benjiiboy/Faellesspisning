@@ -17,6 +17,7 @@
             <TextBlock x:Name="ViewBeatling" TextWrapping="Wrap" Text="" Height="271"/>
             <Image x:Name="image" Height="319" Source="ms-appx:///Assets/mobilepay.png"/>
         </StackPanel>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="30,521,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="141" Width="300"/>
 
     </Grid>
 </Page>

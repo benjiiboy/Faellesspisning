@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot x:Name="Startside" Title="Fællesspisning version 0.001">
+        <Pivot x:Name="Startside" Title="Fællesspisning version 69.420">
 
             <PivotItem Header="Menu">
                 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -128,9 +128,13 @@
                         <TextBlock x:Name="BudgetKonto" TextWrapping="Wrap" Text="" Height="271"/>
                         <Image x:Name="BudgetMobilepay" Height="319" Source="ms-appx:///Assets/mobilepay.png"/>
                     </StackPanel>
-                    <TextBlock x:Name="BudgetTotalBetal" HorizontalAlignment="Left" Margin="30,488,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="127" Width="300"/>
+                    <TextBlock x:Name="BudgetTotalBetal" HorizontalAlignment="Left" Margin="30,488,0,0" TextWrapping="Wrap" Text="{Binding GetNr9Command}" VerticalAlignment="Top" Height="127" Width="300" DataContext="{Binding GetNr9Command}"/>
 
                 </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Filer">
+                
             </PivotItem>
 
         </Pivot>

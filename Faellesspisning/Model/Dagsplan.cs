@@ -38,7 +38,8 @@ namespace Faellesspisning.Model
         private string lørdagMenu;
         private string søndagMenu;
 
-               public string MandagMenu
+        #region Sætter Menu man->søndag
+        public string MandagMenu
         {
             get { return mandagMenu; }
             set
@@ -102,6 +103,9 @@ namespace Faellesspisning.Model
                 OnPropertyChanged("SøndagMenu");
             }
         }
+        #endregion
+
+
 
         //ctor
         private Dagsplan()

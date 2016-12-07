@@ -111,8 +111,9 @@
     </Compile>
     <Compile Include="Viewmodel\BudgetViewmodel.cs" />
     <Compile Include="Viewmodel\DeltagereViewmodel.cs" />
+    <Compile Include="Viewmodel\FilerViewmodel.cs" />
     <Compile Include="Viewmodel\MenuViewmodel.cs" />
-    <Compile Include="Viewmodel\PlanlaegningViewmodel.cs" />
+    <Compile Include="Viewmodel\PlanlægningViewmodel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

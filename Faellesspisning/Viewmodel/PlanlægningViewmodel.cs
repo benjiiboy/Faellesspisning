@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Faellesspisning.Viewmodel
 {
-    class PlanlaegningViewmodel
+    class PlanlægningViewmodel
     {
     }
 }

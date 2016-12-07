@@ -37,7 +37,7 @@
                     <Grid.DataContext>
                         <Viewmodel:DeltagereViewmodel/>
                     </Grid.DataContext>
-                    <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="559" Margin="676,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
+                    <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="559" Margin="678,96,0,-30" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black" SelectionChanged="DeltagereDeltagerListview_SelectionChanged" ItemsSource="{Binding HList}" SelectedItem="{Binding selectedHus}"/>
                     <ListView x:Name="DeltagereKokHjælpListview" HorizontalAlignment="Left" Height="559" Margin="985,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
                     <TextBlock x:Name="DeltagereOverskrift1" HorizontalAlignment="Left" Margin="676,57,0,0" TextWrapping="Wrap" Text="Deltager liste" VerticalAlignment="Top" Width="157" FontSize="20"/>
                     <TextBlock x:Name="DeltagereKokHjælpereOverskrift" HorizontalAlignment="Left" Margin="985,59,0,0" TextWrapping="Wrap" Text="Kokke &amp; Hjælpere" VerticalAlignment="Top" Width="181" Height="25" FontSize="20"/>
@@ -134,7 +134,12 @@
             </PivotItem>
 
             <PivotItem Header="Filer">
-                
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <Button x:Name="button1" Content="Hent" HorizontalAlignment="Left" Margin="666,232,0,0" VerticalAlignment="Top" Height="127" Width="193"/>
+                    <Button x:Name="button1_Copy" Content="Gem" HorizontalAlignment="Left" Margin="419,232,1,0" VerticalAlignment="Top" Height="127" Width="193"/>
+                    <Button x:Name="button1_Copy2" Content="Vælg Fil" HorizontalAlignment="Left" Margin="1031,547,0,0" VerticalAlignment="Top" Height="55" Width="114"/>
+                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="-1063,-74,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+                </Grid>
             </PivotItem>
 
         </Pivot>

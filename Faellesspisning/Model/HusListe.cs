@@ -18,6 +18,16 @@ namespace Faellesspisning.Model
             
             DeltagerListe.Add(new HusInfo() {});
 
+            this.Add(new HusInfo()
+            {
+                HusNummer = "22a",
+                AntalVoksneIHusstand = 2,
+                AntalTeenagerIHusstand = 1,
+                AntalBarnIHusstand = 2,
+                AntalBabyIHusstand = 2,
+            }
+                );
+
             //TODO: tilføj set metoder i husinfo
         }
       

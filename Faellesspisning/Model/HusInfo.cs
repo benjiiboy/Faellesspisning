@@ -8,7 +8,7 @@ namespace Faellesspisning.Model
 {
    public class HusInfo
     {
-
+        
         public HusInfo()
         {
 
@@ -95,8 +95,15 @@ namespace Faellesspisning.Model
             return Mandag + Tirsdag + Onsdag + Torsdag + Fredag + Lørdag + Søndag;
         }
 
-        
-        
+        public override string ToString()
+        {
+            return "Hus: " + HusNummer +
+            ", " + "Voksne: " + AntalVoksneIHusstand +
+            ", " + "Teenagere" + AntalTeenagerIHusstand +
+            ", " + "Børn" + AntalBarnIHusstand +
+            ", " + "Baby" + AntalBabyIHusstand;
+            }
+
 
 
 

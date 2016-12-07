@@ -36,5 +36,10 @@ namespace Faellesspisning
         {
 
         }
+
+        private void DeltagereDeltagerListview_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

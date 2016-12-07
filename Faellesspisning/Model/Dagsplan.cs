@@ -38,7 +38,17 @@ namespace Faellesspisning.Model
         private string lørdagMenu;
         private string søndagMenu;
 
-               public string MandagMenu
+        private string kokMandag;
+        private string kokTirsdag;
+        private string kokOnsdag;
+        private string kokTorsdag;
+        private string kokFredag;
+        private string kokLørdag;
+        private string kokSøndag;
+
+        #region Menu
+
+        public string MandagMenu
         {
             get { return mandagMenu; }
             set
@@ -102,18 +112,98 @@ namespace Faellesspisning.Model
                 OnPropertyChanged("SøndagMenu");
             }
         }
+#endregion
+
+        #region Kokke
+        public string KokMandag
+        {
+            get { return kokMandag; }
+            set
+            {
+                kokMandag = value;
+                OnPropertyChanged("KokMandag");
+            }
+        }
+
+        public string KokTirsdag
+        {
+            get { return kokTirsdag; }
+            set
+            {
+                kokTirsdag = value;
+                OnPropertyChanged("KokTirsdag");
+            }
+        }
+
+        public string KokOnsdag
+        {
+            get { return kokOnsdag; }
+            set
+            {
+                kokOnsdag = value;
+                OnPropertyChanged("KokOnsdag");
+            }
+        }
+
+        public string KokTorsdag
+        {
+            get { return kokTorsdag; }
+            set
+            {
+                kokTorsdag = value;
+                OnPropertyChanged("KokTorsdag");
+            }
+        }
+
+        public string KokFredag
+        {
+            get { return kokFredag; }
+            set
+            {
+                kokFredag = value;
+                OnPropertyChanged("KokFredag");
+            }
+        }
+
+        public string KokLørdag
+        {
+            get { return kokLørdag; }
+            set
+            {
+                kokLørdag = value;
+                OnPropertyChanged("KokLørdag");
+            }
+        }
+
+        public string KokSøndag
+        {
+            get { return kokSøndag; }
+            set
+            {
+                kokSøndag = value;
+                OnPropertyChanged("KokSøndag");
+            }
+        }
+
+        #endregion
 
         //ctor
         private Dagsplan()
         {
-            this.mandagMenu = "Menu";
-            this.tirsdagMenu ="Menu";
-            this.onsdagMenu = "Menu";
-            this.torsdagMenu = "Menu";
-            this.fredagMenu = "Menu";
-            this.lørdagMenu = "Menu";
-            this.søndagMenu = "Menu";
-
+            this.mandagMenu = "";
+            this.tirsdagMenu ="";
+            this.onsdagMenu = "";
+            this.torsdagMenu = "";
+            this.fredagMenu = "";
+            this.lørdagMenu = "";
+            this.søndagMenu = "";
+            this.kokMandag = "";
+            this.kokTirsdag = "";
+            this.kokOnsdag = "";
+            this.kokTorsdag = "";
+            this.kokFredag = "";
+            this.kokLørdag = "";
+            this.kokSøndag = "";
 
         }
 

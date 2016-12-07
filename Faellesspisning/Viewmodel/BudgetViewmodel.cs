@@ -9,11 +9,21 @@ namespace Faellesspisning.Viewmodel
 {
     class BudgetViewmodel : INotifyPropertyChanged
     {
-        
+        //instance field
+        public int NummerNI;
+
+        public int HentNrCommand
+        {
+            get { return GetNummer9(); }
+            set {  ; }
+        }
+
+
         public int GetNummer9()
         {
             return 9;
         }
+
 
         #region vores PropertyChangedEventHandler 
         public event PropertyChangedEventHandler PropertyChanged;

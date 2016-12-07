@@ -117,7 +117,7 @@
             <PivotItem Header="Budget">
                 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                     <Grid.DataContext>
-                        <Viewmodel:HusViewmodel/>
+                        <Viewmodel:BudgetViewmodel/>
                     </Grid.DataContext>
                     <Grid HorizontalAlignment="Left" Height="605" Margin="30,30,0,0" VerticalAlignment="Top" Width="300">
                         <TextBox x:Name="BudgetHusNR" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Indtast husnummer"/>
@@ -128,11 +128,7 @@
                         <TextBlock x:Name="BudgetKonto" TextWrapping="Wrap" Text="" Height="271"/>
                         <Image x:Name="BudgetMobilepay" Height="319" Source="ms-appx:///Assets/mobilepay.png"/>
                     </StackPanel>
-                    <TextBlock x:Name="BudgetTotalBetal" HorizontalAlignment="Left" Margin="30,488,0,-4" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="141" Width="300">
-                        <TextBlock.DataContext>
-                            <Viewmodel:HusViewmodel/>
-                        </TextBlock.DataContext>
-                    </TextBlock>
+                    <TextBlock x:Name="BudgetTotalBetal" HorizontalAlignment="Left" Margin="30,488,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="127" Width="300"/>
 
                 </Grid>
             </PivotItem>

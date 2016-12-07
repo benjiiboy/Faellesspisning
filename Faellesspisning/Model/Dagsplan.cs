@@ -9,7 +9,7 @@ namespace Faellesspisning.Model
 {
     public class Dagsplan : INotifyPropertyChanged
     {
-
+        //singleton
         private static Dagsplan instance = new Dagsplan();
 
         public static Dagsplan Instance

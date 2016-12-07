@@ -99,11 +99,11 @@ namespace Faellesspisning.Model
         {
             return "Hus: " + HusNummer +
             ", " + "Voksne: " + AntalVoksneIHusstand +
-            ", " + "Teenagere" + AntalTeenagerIHusstand +
-            ", " + "Børn" + AntalBarnIHusstand +
-            ", " + "Baby" + AntalBabyIHusstand;
+            ", " + "Teenagere: " + AntalTeenagerIHusstand +
+            ", " + "Børn: " + AntalBarnIHusstand +
+            ", " + "Baby: " + AntalBabyIHusstand;
             }
-
+        // vi skal havde lavet en metode (selectedhus) som kan vælge et hus og se hvor mange der er i den valgte husstand
 
 
 

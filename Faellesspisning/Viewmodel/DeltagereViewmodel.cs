@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace Faellesspisning.Viewmodel
 {
-    class HusViewmodel : INotifyPropertyChanged
+    class DeltagereViewmodel : INotifyPropertyChanged
     {
         //props til knapper 
         private readonly string filnavn = "HusListe.json";
@@ -83,7 +83,7 @@ namespace Faellesspisning.Viewmodel
         }
 
 
-        public HusViewmodel()
+        public DeltagereViewmodel()
         {
             HList = new Model.HusListe();
             AddHusCommand = new RelayCommand(AddNewHus);

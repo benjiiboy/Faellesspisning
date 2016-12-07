@@ -35,7 +35,7 @@
             <PivotItem Header="Deltagere">
                 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                     <Grid.DataContext>
-                        <Viewmodel:HusViewmodel/>
+                        <Viewmodel:DeltagereViewmodel/>
                     </Grid.DataContext>
                     <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="559" Margin="676,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
                     <ListView x:Name="DeltagereKokHjælpListview" HorizontalAlignment="Left" Height="559" Margin="985,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>

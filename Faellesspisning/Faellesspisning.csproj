@@ -110,8 +110,9 @@
       <DependentUpon>Planlægning.xaml</DependentUpon>
     </Compile>
     <Compile Include="Viewmodel\BudgetViewmodel.cs" />
-    <Compile Include="Viewmodel\HusViewmodel.cs" />
+    <Compile Include="Viewmodel\DeltagereViewmodel.cs" />
     <Compile Include="Viewmodel\MenuViewmodel.cs" />
+    <Compile Include="Viewmodel\PlanlaegningViewmodel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

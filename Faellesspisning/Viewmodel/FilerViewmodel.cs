@@ -23,4 +23,4 @@ namespace Faellesspisning.Viewmodel
         #endregion
     }
 }
-}
+

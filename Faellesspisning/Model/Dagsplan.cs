@@ -29,7 +29,7 @@ namespace Faellesspisning.Model
         }
         #endregion
 
-
+        #region Instance field Menu dage
         private string mandagMenu;
         private string tirsdagMenu;
         private string onsdagMenu;
@@ -37,7 +37,10 @@ namespace Faellesspisning.Model
         private string fredagMenu;
         private string lørdagMenu;
         private string søndagMenu;
+        #endregion
 
+
+        #region instance field kok dage
         private string kokMandag;
         private string kokTirsdag;
         private string kokOnsdag;
@@ -45,6 +48,7 @@ namespace Faellesspisning.Model
         private string kokFredag;
         private string kokLørdag;
         private string kokSøndag;
+        #endregion
 
         #region Menu
 
@@ -197,6 +201,7 @@ namespace Faellesspisning.Model
             this.fredagMenu = "";
             this.lørdagMenu = "";
             this.søndagMenu = "";
+
             this.kokMandag = "";
             this.kokTirsdag = "";
             this.kokOnsdag = "";

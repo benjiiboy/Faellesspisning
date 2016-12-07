@@ -9,19 +9,18 @@ namespace Faellesspisning.Viewmodel
 {
     class BudgetViewmodel : INotifyPropertyChanged
     {
-        //instance field
-        public int NummerNI;
+        //prop
 
-        public int HentNrCommand
+        public string BetalingsTextBlock
         {
-            get { return GetNummer9(); }
+            get { return DuskalBetalePerHusstand(); }
             set {  ; }
         }
 
 
-        public int GetNummer9()
+        public string DuskalBetalePerHusstand()
         {
-            return 9;
+            return $"du skal betale Gratis" ;
         }
 
 

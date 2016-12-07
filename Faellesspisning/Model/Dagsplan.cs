@@ -31,6 +31,12 @@ namespace Faellesspisning.Model
 
 
         private string mandagMenu;
+        private string tirsdagMenu;
+        private string onsdagMenu;
+        private string torsdagMenu;
+        private string fredagMenu;
+        private string lørdagMenu;
+        private string søndagMenu;
 
                public string MandagMenu
         {
@@ -42,11 +48,73 @@ namespace Faellesspisning.Model
             }
         }
 
+        public string TirsdagMenu
+        {
+            get { return tirsdagMenu; }
+            set
+            {
+                tirsdagMenu = value;
+                OnPropertyChanged("TirsdagMenu");
+            }
+        }
+        public string OnsdagMenu
+        {
+            get { return onsdagMenu; }
+            set
+            {
+                onsdagMenu = value;
+                OnPropertyChanged("OnsdagMenu");
+            }
+        }
+        public string TorsdagMenu
+        {
+            get { return torsdagMenu; }
+            set
+            {
+                torsdagMenu = value;
+                OnPropertyChanged("TorsdagMenu");
+            }
+        }
+        public string FredagMenu
+        {
+            get { return fredagMenu; }
+            set
+            {
+                fredagMenu = value;
+                OnPropertyChanged("FredagMenu");
+            }
+        }
+        public string LørdagMenu
+        {
+            get { return lørdagMenu; }
+            set
+            {
+                lørdagMenu = value;
+                OnPropertyChanged("LørdagMenu");
+            }
+        }
+        public string SøndagMenu
+        {
+            get { return søndagMenu; }
+            set
+            {
+                søndagMenu = value;
+                OnPropertyChanged("SøndagMenu");
+            }
+        }
 
         //ctor
         private Dagsplan()
         {
             this.mandagMenu = "Menu";
+            this.tirsdagMenu ="Menu";
+            this.onsdagMenu = "Menu";
+            this.torsdagMenu = "Menu";
+            this.fredagMenu = "Menu";
+            this.lørdagMenu = "Menu";
+            this.søndagMenu = "Menu";
+
+
         }
 
 

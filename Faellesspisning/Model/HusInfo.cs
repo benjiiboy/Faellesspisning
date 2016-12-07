@@ -107,5 +107,5 @@ namespace Faellesspisning.Model
 
 
 
-    }
+    }   
 }

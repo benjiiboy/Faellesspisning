@@ -21,7 +21,11 @@
                     <TextBlock x:Name="Fredag" HorizontalAlignment="Left" Margin="172,333,0,0" TextWrapping="Wrap" Text="Fredag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
                     <TextBlock x:Name="Lørdag" HorizontalAlignment="Left" Margin="172,382,0,0" TextWrapping="Wrap" Text="Lørdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
                     <TextBlock x:Name="Søndag" HorizontalAlignment="Left" Margin="172,431,0,0" TextWrapping="Wrap" Text="Søndag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
-                    <TextBlock x:Name="MandagMenuForside" HorizontalAlignment="Left" Margin="408,137,0,0" TextWrapping="Wrap" Text="Hakkebøffer med bearnaise samt ovnkartofler, " VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="MandagMenuForside" HorizontalAlignment="Left" Margin="408,137,0,0" TextWrapping="Wrap" Text="{Binding MandagMenu, Mode=TwoWay}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20">
+                        <TextBlock.DataContext>
+                            <Viewmodel:PlanlægningViewmodel/>
+                        </TextBlock.DataContext>
+                    </TextBlock>
                     <TextBlock x:Name="TirsdagMenuForside" HorizontalAlignment="Left" Margin="408,186,0,0" TextWrapping="Wrap" Text="Flødekartofler" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
                     <TextBlock x:Name="OnsdagMenuForside" HorizontalAlignment="Left" Margin="408,235,0,0" TextWrapping="Wrap" Text="Smørrebrød" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
                     <TextBlock x:Name="TorsdagMenuForside" HorizontalAlignment="Left" Margin="408,284,0,0" TextWrapping="Wrap" Text="hjemmelavet pizza" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
@@ -62,7 +66,11 @@
 
             <PivotItem Header="Planlægning">
                 <Grid Height="608" Margin="51,0,44,0">
-                    <TextBox x:Name="PlanlægningMenuMandag" HorizontalAlignment="Left" Margin="52,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="1" PlaceholderText="Menu"/>
+                    <TextBox x:Name="PlanlægningMenuMandag" HorizontalAlignment="Left" Margin="52,53,0,0" TextWrapping="Wrap" Text="{Binding MandagMenu, Mode=TwoWay}" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="1" PlaceholderText="Menu">
+                        <TextBox.DataContext>
+                            <Viewmodel:PlanlægningViewmodel/>
+                        </TextBox.DataContext>
+                    </TextBox>
                     <TextBox x:Name="PlanlægningKokMandag" HorizontalAlignment="Left" Margin="52,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="2" PlaceholderText="Kok"/>
                     <TextBox x:Name="PlanlægningHjælpMandag" HorizontalAlignment="Left" Margin="52,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="3" PlaceholderText="Hjælpere"/>
                     <TextBox x:Name="PlanlægningOprydMandag" HorizontalAlignment="Left" Margin="52,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="4" PlaceholderText="Oprydere"/>

@@ -9,6 +9,14 @@ namespace Faellesspisning.Viewmodel
 {
     class PlanlægningViewmodel : INotifyPropertyChanged
     {
+
+        public string mandagMenu;
+        public string MandagMenu
+        {
+            get {return mandagMenu; }
+            set { this.mandagMenu = value; OnPropertyChanged(nameof(MandagMenu)); }
+        }
+
         #region vores PropertyChangedEventHandler 
         public event PropertyChangedEventHandler PropertyChanged;
 

@@ -21,7 +21,7 @@
                     <TextBlock x:Name="Fredag" HorizontalAlignment="Left" Margin="172,333,0,0" TextWrapping="Wrap" Text="Fredag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
                     <TextBlock x:Name="Lørdag" HorizontalAlignment="Left" Margin="172,382,0,0" TextWrapping="Wrap" Text="Lørdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
                     <TextBlock x:Name="Søndag" HorizontalAlignment="Left" Margin="172,431,0,0" TextWrapping="Wrap" Text="Søndag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
-                    <TextBlock x:Name="MandagMenuForside" HorizontalAlignment="Left" Margin="408,137,0,0" TextWrapping="Wrap" Text="{Binding MandagMenu, Mode=TwoWay}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20">
+                    <TextBlock x:Name="MandagMenuForside" HorizontalAlignment="Left" Margin="408,137,0,0" TextWrapping="Wrap" Text="{Binding MandagMenu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20">
                         <TextBlock.DataContext>
                             <Viewmodel:PlanlægningViewmodel/>
                         </TextBlock.DataContext>
@@ -66,7 +66,7 @@
 
             <PivotItem Header="Planlægning">
                 <Grid Height="608" Margin="51,0,44,0">
-                    <TextBox x:Name="PlanlægningMenuMandag" HorizontalAlignment="Left" Margin="52,53,0,0" TextWrapping="Wrap" Text="{Binding MandagMenu, Mode=TwoWay}" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="1" PlaceholderText="Menu">
+                    <TextBox x:Name="PlanlægningMenuMandag" HorizontalAlignment="Left" Margin="52,53,0,0" TextWrapping="Wrap" Text="{Binding MandagMenu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="81" Width="146" Grid.Row="1" PlaceholderText="Menu">
                         <TextBox.DataContext>
                             <Viewmodel:PlanlægningViewmodel/>
                         </TextBox.DataContext>

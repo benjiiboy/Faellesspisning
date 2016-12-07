@@ -7,15 +7,37 @@ using System.Threading.Tasks;
 
 namespace Faellesspisning.Viewmodel
 {
-    class PlanlægningViewmodel : INotifyPropertyChanged
+   public class PlanlægningViewmodel : INotifyPropertyChanged
     {
 
-        public string mandagMenu;
+        //public string mandagMenu;
+        //public string MandagMenu
+        //{
+        //    get {return mandagMenu; }
+        //    set { this.mandagMenu = value; OnPropertyChanged(nameof(MandagMenu)); }
+        //}
+
+        public Model.Dagsplan MinDagsplan = Model.Dagsplan.Instance;
+        
+        public PlanlægningViewmodel()
+        {
+            this.mandagMenu = "Menu";
+        }
+
+        private string mandagMenu;
+
         public string MandagMenu
         {
-            get {return mandagMenu; }
-            set { this.mandagMenu = value; OnPropertyChanged(nameof(MandagMenu)); }
+            get { return mandagMenu ; }
+            set
+            {
+                mandagMenu = value;
+                OnPropertyChanged("MandagMenu");
+            }
         }
+
+
+
 
         #region vores PropertyChangedEventHandler 
         public event PropertyChangedEventHandler PropertyChanged;

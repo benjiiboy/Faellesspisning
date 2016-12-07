@@ -24,9 +24,31 @@ namespace Faellesspisning.Model
                 AntalVoksneIHusstand = 2,
                 AntalTeenagerIHusstand = 1,
                 AntalBarnIHusstand = 2,
-                AntalBabyIHusstand = 2,
-            }
-                );
+                AntalBabyIHusstand = 2
+            });
+
+
+
+            this.Add(new HusInfo()
+            {
+                HusNummer = "69",
+                AntalVoksneIHusstand = 2,
+                AntalTeenagerIHusstand = 3,
+                AntalBarnIHusstand = 1,
+                AntalBabyIHusstand = 4,
+            });
+
+
+
+            this.Add(new HusInfo()
+            {
+                HusNummer = "420",
+                AntalVoksneIHusstand = 3,
+                AntalTeenagerIHusstand = 1,
+                AntalBarnIHusstand = 0,
+                AntalBabyIHusstand = 1,
+            });
+                
 
             //TODO: tilføj set metoder i husinfo
         }

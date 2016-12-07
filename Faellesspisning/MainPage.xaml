@@ -13,6 +13,9 @@
 
             <PivotItem Header="Menu">
                 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <Grid.DataContext>
+                        <Viewmodel:PlanlægningViewmodel/>
+                    </Grid.DataContext>
 
                     <TextBlock x:Name="Mandag" HorizontalAlignment="Left" Margin="172,137,0,0" TextWrapping="Wrap" Text="Mandag" VerticalAlignment="Top" Height="40" Width="169" FontSize="20"/>
                     <TextBlock x:Name="Tirsdag" HorizontalAlignment="Left" Margin="172,186,0,0" TextWrapping="Wrap" Text="Tirsdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
@@ -26,12 +29,12 @@
                             <Viewmodel:PlanlægningViewmodel/>
                         </TextBlock.DataContext>
                     </TextBlock>
-                    <TextBlock x:Name="TirsdagMenuForside" HorizontalAlignment="Left" Margin="408,186,0,0" TextWrapping="Wrap" Text="Flødekartofler" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
-                    <TextBlock x:Name="OnsdagMenuForside" HorizontalAlignment="Left" Margin="408,235,0,0" TextWrapping="Wrap" Text="Smørrebrød" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
-                    <TextBlock x:Name="TorsdagMenuForside" HorizontalAlignment="Left" Margin="408,284,0,0" TextWrapping="Wrap" Text="hjemmelavet pizza" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
-                    <TextBlock x:Name="FredagMenuForside" HorizontalAlignment="Left" Margin="408,333,0,0" TextWrapping="Wrap" Text="Pomfritter" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
-                    <TextBlock x:Name="LørdagMenuForside" HorizontalAlignment="Left" Margin="408,382,0,0" TextWrapping="Wrap" Text="Flæskesteg med brunkartofler" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
-                    <TextBlock x:Name="SøndagMenuForside" HorizontalAlignment="Left" Margin="408,431,0,0" TextWrapping="Wrap" Text="Mad pandekager" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="TirsdagMenuForside" HorizontalAlignment="Left" Margin="408,186,0,0" TextWrapping="Wrap" Text="{Binding Minplan.TirsdagMenu}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="OnsdagMenuForside" HorizontalAlignment="Left" Margin="408,235,0,0" TextWrapping="Wrap" Text="{Binding Minplan.OnsdagMenu}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="TorsdagMenuForside" HorizontalAlignment="Left" Margin="408,284,0,0" TextWrapping="Wrap" Text="{Binding Minplan.TorsdagMenu}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="FredagMenuForside" HorizontalAlignment="Left" Margin="408,333,0,0" TextWrapping="Wrap" Text="{Binding Minplan.FredagMenu}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="LørdagMenuForside" HorizontalAlignment="Left" Margin="408,382,0,0" TextWrapping="Wrap" Text="{Binding Minplan.LørdagMenu}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
+                    <TextBlock x:Name="SøndagMenuForside" HorizontalAlignment="Left" Margin="408,431,0,0" TextWrapping="Wrap" Text="{Binding Minplan.SøndagMenu}" VerticalAlignment="Top" Width="720" Height="40" FontSize="20"/>
 
                 </Grid>
             </PivotItem>

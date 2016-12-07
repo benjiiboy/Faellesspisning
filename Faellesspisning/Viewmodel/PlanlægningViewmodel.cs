@@ -19,22 +19,7 @@ namespace Faellesspisning.Viewmodel
 
         public Model.Dagsplan MinDagsplan = Model.Dagsplan.Instance;
         
-        public PlanlægningViewmodel()
-        {
-            this.mandagMenu = "Menu";
-        }
 
-        private string mandagMenu;
-
-        public string MandagMenu
-        {
-            get { return mandagMenu ; }
-            set
-            {
-                mandagMenu = value;
-                OnPropertyChanged("MandagMenu");
-            }
-        }
 
 
 

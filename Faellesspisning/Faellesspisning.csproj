@@ -111,6 +111,7 @@
     </Compile>
     <Compile Include="Viewmodel\BudgetViewmodel.cs" />
     <Compile Include="Viewmodel\HusViewmodel.cs" />
+    <Compile Include="Viewmodel\MenuViewmodel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -147,7 +148,6 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

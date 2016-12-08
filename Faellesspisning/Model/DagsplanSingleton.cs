@@ -302,9 +302,36 @@ namespace Faellesspisning.Model
             this.hjælpereFredag = "";
             this.hjælpereLørdag = "";
             this.hjælpereSøndag = "";
+
+            DagsplanSingleton NyKokHjælp = new DagsplanSingleton();
         }
+        public DagsplanSingleton NyKokHjælp { get; set; }
+        public List<DagsplanSingleton> HjælpeKokListe = new List<DagsplanSingleton>();
+
+        public void AddHjælpKok()
+        {
+   DagsplanSingleton temphusinfo = new DagsplanSingleton();
+            //temphusinfo.AntalBabyIHusstand = Newhus.AntalBabyIHusstand;
+            temphusinfo.KokMandag = NyKokHjælp.KokMandag;
+            temphusinfo.KokTirsdag = NyKokHjælp.KokTirsdag;
+            temphusinfo.KokOnsdag = NyKokHjælp.KokOnsdag;
+            temphusinfo.KokTorsdag = NyKokHjælp.KokTorsdag;
+            temphusinfo.KokFredag = NyKokHjælp.KokFredag;
+            temphusinfo.KokLørdag = NyKokHjælp.KokLørdag;
+            temphusinfo.KokSøndag = NyKokHjælp.KokSøndag;
+
+            temphusinfo.HjælpereMandag = NyKokHjælp.HjælpereMandag;
+            temphusinfo.HjælpereTirsdag = NyKokHjælp.HjælpereTirsdag;
+            temphusinfo.HjælpereOnsdag = NyKokHjælp.HjælpereOnsdag;
+            temphusinfo.HjælpereTorsdag = NyKokHjælp.HjælpereTorsdag;
+            temphusinfo.HjælpereFredag = NyKokHjælp.HjælpereFredag;
+            temphusinfo.HjælpereLørdag = NyKokHjælp.HjælpereLørdag;
+            temphusinfo.HjælpereSøndag = NyKokHjælp.HjælpereSøndag;
 
 
+
+            //HList.Remove(temphusinfo);
+        }
 
     }
 }

@@ -30,7 +30,7 @@ namespace Faellesspisning.Viewmodel
         public RelayCommand SletAlleHuseCommand { get; set; }
 
 
-       
+        private Model.HusInfo SelectedElev;
 
         StorageFolder localfolder = null;
 
@@ -83,7 +83,8 @@ namespace Faellesspisning.Viewmodel
              
 
             HList.Add(temphusinfo);
-            
+
+            //HList.Remove(temphusinfo);
         }
 
         public void Slethus()
@@ -95,11 +96,11 @@ namespace Faellesspisning.Viewmodel
         public DeltagereViewmodel()
         {
             HList = new Model.HusListe();
+            Newhus = new Model.HusInfo();
             SelectedHus = new Model.HusInfo();
             AddHusCommand = new RelayCommand(AddNewHus);
             SletHusCommand = new RelayCommand(Slethus);
             SletAlleHuseCommand = new RelayCommand(SletAlleHuse);
-            Newhus = new Model.HusInfo();
 
             localfolder = ApplicationData.Current.LocalFolder;
         }

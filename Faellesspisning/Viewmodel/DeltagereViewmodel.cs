@@ -28,6 +28,7 @@ namespace Faellesspisning.Viewmodel
         public RelayCommand BeregnPrisCommand { get; set; }
         public RelayCommand PlanlægCommand { get; set; }
         public RelayCommand SletAlleHuseCommand { get; set; }
+        public 
 
 
         private Model.HusInfo SelectedElev;

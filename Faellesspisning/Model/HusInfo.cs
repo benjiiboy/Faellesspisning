@@ -78,12 +78,7 @@ namespace Faellesspisning.Model
         public int AntalVoksneIHusstand { get; set; }
         public int AntalTeenagerIHusstand { get; set; }
         public int AntalBarnIHusstand { get; set; }
-
         public int AntalBabyIHusstand { get; set; }
-
-
-
-
         public string HusNummer { get; set; }
 
 

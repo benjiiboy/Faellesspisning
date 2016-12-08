@@ -50,6 +50,17 @@ namespace Faellesspisning.Model
         private string kokSøndag;
         #endregion
 
+        #region instance field hjælpere dage
+        private string hjælpereMandag;
+        private string hjælpereTirsdag;
+        private string hjælpereOnsdag;
+        private string hjælpereTorsdag;
+        private string hjælpereFredag;
+        private string hjælpereLørdag;
+        private string hjælpereSøndag;
+
+        #endregion
+
         #region Menu
 
         public string MandagMenu
@@ -191,6 +202,80 @@ namespace Faellesspisning.Model
 
         #endregion
 
+        #region Hjælpere
+
+        public string HjælpereMandag
+        {
+            get { return hjælpereMandag; }
+            set
+            {
+                hjælpereMandag = value;
+                OnPropertyChanged("HjælpereMandag");
+            }
+        }
+
+        public string HjælpereTirsdag
+        {
+            get { return hjælpereTirsdag; }
+            set
+            {
+                hjælpereTirsdag = value;
+                OnPropertyChanged("HjælpereMTirsdag");
+            }
+        }
+
+        public string HjælpereOnsdag
+        {
+            get { return hjælpereOnsdag; }
+            set
+            {
+                hjælpereOnsdag = value;
+                OnPropertyChanged("HjælpereOnsdag");
+            }
+        }
+
+        public string HjælpereTorsdag
+        {
+            get { return hjælpereTorsdag; }
+            set
+            {
+                hjælpereTorsdag = value;
+                OnPropertyChanged("HjælpereTorsdag");
+            }
+        }
+
+        public string HjælpereFredag
+        {
+            get { return hjælpereFredag; }
+            set
+            {
+                hjælpereFredag = value;
+                OnPropertyChanged("HjælpereFredag");
+            }
+        }
+
+        public string HjælpereLørdag
+        {
+            get { return hjælpereLørdag; }
+            set
+            {
+                hjælpereLørdag = value;
+                OnPropertyChanged("HjælpereLørdag");
+            }
+        }
+
+        public string HjælpereSøndag
+        {
+            get { return hjælpereSøndag; }
+            set
+            {
+                hjælpereSøndag = value;
+                OnPropertyChanged("HjælpereSøndag");
+            }
+        }
+
+        #endregion
+
         //ctor
         private DagsplanSingleton()
         {
@@ -210,6 +295,13 @@ namespace Faellesspisning.Model
             this.kokLørdag = "";
             this.kokSøndag = "";
 
+            this.hjælpereMandag = "";
+            this.hjælpereTirsdag = "";
+            this.hjælpereOnsdag = "";
+            this.hjælpereTorsdag = "";
+            this.hjælpereFredag = "";
+            this.hjælpereLørdag = "";
+            this.hjælpereSøndag = "";
         }
 
 

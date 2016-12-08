@@ -22,8 +22,10 @@ namespace Faellesspisning.Model
         private DeltagerSingleton()
         {
             HList = new Model.HusListe();
+            Newhus = new Model.HusInfo();
             AddHusCommand = new RelayCommand(AddNewHus);
             SletHusCommand = new RelayCommand(Slethus);
+            
 
             localfolder = ApplicationData.Current.LocalFolder;
         }
@@ -89,10 +91,11 @@ namespace Faellesspisning.Model
             temphusinfo.AntalBarnIHusstand = Newhus.AntalBarnIHusstand;
             temphusinfo.AntalTeenagerIHusstand = Newhus.AntalTeenagerIHusstand;
             temphusinfo.AntalVoksneIHusstand = Newhus.AntalVoksneIHusstand;
+            temphusinfo.HusNummer = Newhus.HusNummer;
 
-            DeltagerListe.Add(temphusinfo);
+            HList.Add(temphusinfo);
 
-            HList.Remove(temphusinfo);
+            //HList.Remove(temphusinfo);
         }
 
         public void Slethus()

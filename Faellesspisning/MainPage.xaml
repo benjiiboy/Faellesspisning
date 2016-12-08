@@ -49,18 +49,18 @@
                     <ListView x:Name="DeltagereKokHjælpListview" HorizontalAlignment="Left" Height="559" Margin="985,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
                     <TextBlock x:Name="DeltagereOverskrift1" HorizontalAlignment="Left" Margin="676,57,0,0" TextWrapping="Wrap" Text="Deltager liste" VerticalAlignment="Top" Width="157" FontSize="20"/>
                     <TextBlock x:Name="DeltagereKokHjælpereOverskrift" HorizontalAlignment="Left" Margin="985,59,0,0" TextWrapping="Wrap" Text="Kokke &amp; Hjælpere" VerticalAlignment="Top" Width="181" Height="25" FontSize="20"/>
-                    <Button x:Name="DeltagereTilmeldKnap" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,497,0,0" VerticalAlignment="Top" Height="50" Width="80" ClickMode="{Binding Mindeltager.AddHusCommand}" Command="{Binding Mindeltager.AddHusCommand, Mode=TwoWay}"/>
+                    <Button x:Name="DeltagereTilmeldKnap" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,497,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding Mindeltager.AddHusCommand}"/>
                     <Button x:Name="DeltagereSletKnap" Content="Slet" HorizontalAlignment="Left" Margin="217,497,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding Mindeltager.SletHusCommand}">
                         <Button.DataContext>
                             <Viewmodel:DeltagereViewmodel/>
                         </Button.DataContext>
                     </Button>
                     <Button x:Name="DeltagereRedigetKnap" Content="Rediger" HorizontalAlignment="Left" Margin="121,573,0,0" VerticalAlignment="Top" Height="50" Width="176"/>
-                    <TextBox x:Name="DeltagereHusNR" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.HList[0].HusNummer, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
-                    <TextBox x:Name="DeltagereAntalVoksne" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.HList[0].AntalVoksneIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Antal Voksne"/>
-                    <TextBox x:Name="DeltagereUng715" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.HList[0].AntalTeenagerIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 7-15 år"/>
-                    <TextBox x:Name="DeltagereUng36" HorizontalAlignment="Left" Margin="121,261,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.HList[0].AntalBarnIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 3-6 år"/>
-                    <TextBox x:Name="DeltagereBaby" HorizontalAlignment="Left" Margin="121,315,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.HList[0].AntalBabyIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Under 3 år"/>
+                    <TextBox x:Name="DeltagereHusNR" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.Newhus.HusNummer, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
+                    <TextBox x:Name="DeltagereAntalVoksne" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.Newhus.AntalVoksneIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Antal Voksne"/>
+                    <TextBox x:Name="DeltagereUng715" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.Newhus.AntalTeenagerIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 7-15 år"/>
+                    <TextBox x:Name="DeltagereUng36" HorizontalAlignment="Left" Margin="121,261,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.Newhus.AntalBarnIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 3-6 år"/>
+                    <TextBox x:Name="DeltagereBaby" HorizontalAlignment="Left" Margin="121,315,0,0" TextWrapping="Wrap" Text="{Binding Mindeltager.Newhus.AntalBabyIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Under 3 år"/>
                     <CheckBox x:Name="DeltagereHjælperMandag" Content="Mandag" HorizontalAlignment="Left" Margin="367,91,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperTirsdag" Content="Tirsdag" HorizontalAlignment="Left" Margin="367,118,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperOnsdag" Content="Onsdag" HorizontalAlignment="Left" Margin="367,145,0,0" VerticalAlignment="Top"/>

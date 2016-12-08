@@ -46,7 +46,11 @@
                         <Viewmodel:DeltagereViewmodel/>
                     </Grid.DataContext>
                     <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="559" Margin="678,96,0,-30" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black" SelectionChanged="DeltagereDeltagerListview_SelectionChanged" ItemsSource="{Binding Mindeltager.HList}" SelectedItem="{Binding Mindeltager.selectedHus, Mode=TwoWay}"/>
-                    <ListView x:Name="DeltagereKokHjælpListview" HorizontalAlignment="Left" Height="559" Margin="985,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black"/>
+                    <ListView x:Name="DeltagereKokHjælpListview" HorizontalAlignment="Left" Height="559" Margin="985,96,0,0" VerticalAlignment="Top" Width="250" BorderThickness="2" BorderBrush="Black">
+                        <ListView.DataContext>
+                            <Viewmodel:PlanlægningViewmodel/>
+                        </ListView.DataContext>
+                    </ListView>
                     <TextBlock x:Name="DeltagereOverskrift1" HorizontalAlignment="Left" Margin="676,57,0,0" TextWrapping="Wrap" Text="Deltager liste" VerticalAlignment="Top" Width="157" FontSize="20"/>
                     <TextBlock x:Name="DeltagereKokHjælpereOverskrift" HorizontalAlignment="Left" Margin="985,59,0,0" TextWrapping="Wrap" Text="Kokke &amp; Hjælpere" VerticalAlignment="Top" Width="181" Height="25" FontSize="20"/>
                     <Button x:Name="DeltagereTilmeldKnap" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,497,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding Mindeltager.AddHusCommand}"/>

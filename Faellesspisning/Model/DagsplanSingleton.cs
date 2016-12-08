@@ -311,7 +311,6 @@ namespace Faellesspisning.Model
         public void AddHjælpKok()
         {
    DagsplanSingleton temphusinfo = new DagsplanSingleton();
-            //temphusinfo.AntalBabyIHusstand = Newhus.AntalBabyIHusstand;
             temphusinfo.KokMandag = NyKokHjælp.KokMandag;
             temphusinfo.KokTirsdag = NyKokHjælp.KokTirsdag;
             temphusinfo.KokOnsdag = NyKokHjælp.KokOnsdag;
@@ -331,6 +330,12 @@ namespace Faellesspisning.Model
 
 
             //HList.Remove(temphusinfo);
+        }
+
+        public override string ToString()
+        {
+            return 
+
         }
 
     }

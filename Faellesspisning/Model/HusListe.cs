@@ -13,6 +13,7 @@ namespace Faellesspisning.Model
     {
         List<HusInfo> DeltagerListe = new List<HusInfo>();
 
+
         public HusListe() :base()
         {
             

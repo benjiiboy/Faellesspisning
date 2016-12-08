@@ -27,6 +27,10 @@ namespace Faellesspisning.Viewmodel
         public RelayCommand RedigerCommand { get; set; }
         public RelayCommand BeregnPrisCommand { get; set; }
         public RelayCommand PlanlægCommand { get; set; }
+        public RelayCommand SletAlleHuseCommand { get; set; }
+
+
+        private Model.HusInfo SelectedElev;
 
         StorageFolder localfolder = null;
 
@@ -71,10 +75,12 @@ namespace Faellesspisning.Viewmodel
         public void AddNewHus()
         {
             Model.HusInfo temphusinfo = new Model.HusInfo();
+            temphusinfo.HusNummer = Newhus.HusNummer;
             temphusinfo.AntalBabyIHusstand = Newhus.AntalBabyIHusstand;
             temphusinfo.AntalBarnIHusstand = Newhus.AntalBarnIHusstand;
             temphusinfo.AntalTeenagerIHusstand = Newhus.AntalTeenagerIHusstand;
             temphusinfo.AntalVoksneIHusstand = Newhus.AntalVoksneIHusstand;
+             
 
             DeltagerListe.Add(temphusinfo);
 
@@ -90,8 +96,10 @@ namespace Faellesspisning.Viewmodel
         public DeltagereViewmodel()
         {
             HList = new Model.HusListe();
+            SelectedHus = new Model.HusInfo();
             AddHusCommand = new RelayCommand(AddNewHus);
             SletHusCommand = new RelayCommand(Slethus);
+            SletAlleHuseCommand = new RelayCommand(SletAlleHuse);
 
             localfolder = ApplicationData.Current.LocalFolder;
         }
@@ -126,6 +134,11 @@ namespace Faellesspisning.Viewmodel
                 Antal+= i.AntalPersonerIHusstand;
             }
             return Antal;
+        }
+
+        public void SletAlleHuse()
+        {
+            this.HList.Clear();
         }
     }
 }

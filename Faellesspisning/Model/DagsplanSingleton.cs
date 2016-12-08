@@ -7,12 +7,12 @@ using System.ComponentModel;
 
 namespace Faellesspisning.Model 
 {
-    public class Singleton : INotifyPropertyChanged
+    public class DagsplanSingleton : INotifyPropertyChanged
     {
         //singleton
-        private static Singleton instance = new Singleton();
+        private static DagsplanSingleton instance = new DagsplanSingleton();
 
-        public static Singleton Instance
+        public static DagsplanSingleton Instance
         {
             get { return instance; }
         }
@@ -192,7 +192,7 @@ namespace Faellesspisning.Model
         #endregion
 
         //ctor
-        private Singleton()
+        private DagsplanSingleton()
         {
             this.mandagMenu = "";
             this.tirsdagMenu ="";

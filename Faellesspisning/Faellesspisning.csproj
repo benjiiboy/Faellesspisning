@@ -99,7 +99,8 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Singleton.cs" />
+    <Compile Include="Model\DeltagerSingleton.cs" />
+    <Compile Include="Model\DagsplanSingleton.cs" />
     <Compile Include="Model\HusInfo.cs" />
     <Compile Include="Model\HusListe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

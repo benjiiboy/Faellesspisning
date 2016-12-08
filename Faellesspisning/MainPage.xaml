@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Viewmodel="using:Faellesspisning.Viewmodel"
+    xmlns:Model="using:Faellesspisning.Model"
     x:Class="Faellesspisning.MainPage"
     mc:Ignorable="d">
 
@@ -63,6 +64,11 @@
                     <CheckBox x:Name="DeltagereHjælperFredag" Content="Fredag" HorizontalAlignment="Left" Margin="367,199,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperLørdag" Content="Lørdag" HorizontalAlignment="Left" Margin="367,231,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperSøndag" Content="Søndag" HorizontalAlignment="Left" Margin="367,263,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.492,1.375"/>
+                    <TextBlock x:Name="viserhusinfo" HorizontalAlignment="Left" Margin="121,392,0,0" TextWrapping="Wrap" Text="{Binding selectedHus, Mode=TwoWay}" VerticalAlignment="Top" Height="65" Width="540">
+                        <TextBlock.DataContext>
+                            <Viewmodel:DeltagereViewmodel/>
+                        </TextBlock.DataContext>
+                    </TextBlock>
 
                 </Grid>
             </PivotItem>

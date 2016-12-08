@@ -20,6 +20,8 @@ namespace Faellesspisning.Viewmodel
         public Model.HusListe HList { get; set; }
         public Model.HusInfo Newhus { get; set; }
 
+        
+
         public RelayCommand AddHusCommand { get; set; }
         public RelayCommand SletHusCommand { get; set; }
         public RelayCommand RedigerCommand { get; set; }
@@ -48,18 +50,20 @@ namespace Faellesspisning.Viewmodel
         // nameof kan altså gå ind på vores Plist fx og finde navn.
         //bliver brugt her med SletElev metode
 
-        public Model.HusInfo SelectedHus;
+        private Model.HusInfo SelectedHus;
 
         public Model.HusInfo selectedHus
         {
             get { return SelectedHus; }
             set
             {
-                SelectedHus = value;
-                OnPropertyChanged(nameof(selectedHus));
+                this.SelectedHus = value;
+                this.OnPropertyChanged(nameof(selectedHus));
             }
         }
         #endregion
+
+        
 
         List<Model.HusInfo> DeltagerListe = new List<Model.HusInfo>();
         

@@ -26,5 +26,35 @@ namespace Faellesspisning
         {
             this.InitializeComponent();
         }
+
+        private void listView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+              
+        }
+
+        private void DeltagerOverskrift_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeltagereDeltagerListview_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock1_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeltagereHjælperSøndag_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock2_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

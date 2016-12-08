@@ -99,7 +99,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Dagsplan.cs" />
+    <Compile Include="Model\Singleton.cs" />
     <Compile Include="Model\HusInfo.cs" />
     <Compile Include="Model\HusListe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,8 +112,6 @@
     </Compile>
     <Compile Include="Viewmodel\BudgetViewmodel.cs" />
     <Compile Include="Viewmodel\DeltagereViewmodel.cs" />
-    <Compile Include="Viewmodel\FilerViewmodel.cs" />
-    <Compile Include="Viewmodel\MenuViewmodel.cs" />
     <Compile Include="Viewmodel\PlanlægningViewmodel.cs" />
   </ItemGroup>
   <ItemGroup>

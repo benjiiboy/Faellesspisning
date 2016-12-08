@@ -9,9 +9,9 @@ namespace Faellesspisning.Viewmodel
 {
     public class PlanlægningViewmodel
     {
-        private Model.Dagsplan minplan = Model.Dagsplan.Instance;
+        private Model.Singleton minplan = Model.Singleton.Instance;
 
-        public Model.Dagsplan Minplan { get { return minplan; } }
+        public Model.Singleton Minplan { get { return minplan; } }
 
     }
 }

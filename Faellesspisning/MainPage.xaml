@@ -12,7 +12,7 @@
         <Pivot x:Name="Startside" Title="Fællesspisning version 69.420">
 
             <PivotItem Header="Menu">
-                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-10,-366,10,366">
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
                     <TextBlock x:Name="Mandag" HorizontalAlignment="Left" Margin="172,137,0,0" TextWrapping="Wrap" Text="Mandag" VerticalAlignment="Top" Height="40" Width="169" FontSize="20"/>
                     <TextBlock x:Name="Tirsdag" HorizontalAlignment="Left" Margin="172,186,0,0" TextWrapping="Wrap" Text="Tirsdag" VerticalAlignment="Top" Width="169" Height="40" FontSize="20"/>
@@ -41,10 +41,11 @@
                     <Grid.DataContext>
                         <Viewmodel:DeltagereViewmodel/>
                     </Grid.DataContext>
-                    <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="483" Margin="996,93,0,0" VerticalAlignment="Top" Width="124" BorderThickness="2" BorderBrush="Black" SelectionChanged="DeltagereDeltagerListview_SelectionChanged" ItemsSource="{Binding HList}" SelectedItem="{Binding selectedHus}"/>
+                    <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="483" Margin="996,93,0,0" VerticalAlignment="Top" Width="124" BorderThickness="2" BorderBrush="Black" SelectionChanged="DeltagereDeltagerListview_SelectionChanged" ItemsSource="{Binding HList}" SelectedItem="{Binding selectedHus, Mode=TwoWay}"/>
                     <TextBlock x:Name="DeltagereOverskrift1" HorizontalAlignment="Left" Margin="996,48,0,0" TextWrapping="Wrap" Text="Deltager liste" VerticalAlignment="Top" Width="157" FontSize="20"/>
                     <Button x:Name="DeltagereTilmeldKnap" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,446,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding AddHusCommand}"/>
                     <Button x:Name="DeltagereSletKnap" Content="Slet" HorizontalAlignment="Left" Margin="217,446,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding SletHusCommand}"/>
+                    <Button x:Name="DeltagereRedigetKnap" Content="Rediger" HorizontalAlignment="Left" Margin="121,526,0,0" VerticalAlignment="Top" Height="50" Width="176"/>
                     <TextBox x:Name="DeltagereHusNR" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="{Binding HList[0].HusNummer, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
                     <TextBox x:Name="DeltagereAntalVoksne" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalVoksneIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Antal Voksne"/>
                     <TextBox x:Name="DeltagereUng715" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalTeenagerIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 7-15 år"/>

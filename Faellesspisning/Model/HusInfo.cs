@@ -31,44 +31,43 @@ namespace Faellesspisning.Model
         public double TotalAntalKuverter;
         public double AntalKuverterIHusstand;
 
-        public double GetAntalKuverterIHusstand()
+        public double? GetAntalKuverterIHusstand()
         {
             return GetAntalBabyIHusstandKuvert() + GetAntalBabyIHusstandKuvert() + GetAntalTeenagerIHusstandKuvert() + GetAntalVoksneIHusstandKuvert();
         }
-        
 
+        //TODO: Få metode til at virke fejl pga "?"
+        //public double? GetAntalPersonerIHusstand()
+        //{
+        //    return AntalPersonerIHusstand = AntalBabyIHusstand + AntalBarnIHusstand + AntalTeenagerIHusstand + AntalVoksneIHusstand;
+        //}
 
-        public double GetAntalPersonerIHusstand()
-        {
-            return AntalPersonerIHusstand = AntalBabyIHusstand + AntalBarnIHusstand + AntalTeenagerIHusstand + AntalVoksneIHusstand;
-        }
-
-        public double GetAntalVoksneIHusstandKuvert()
+    public double? GetAntalVoksneIHusstandKuvert()
         {
             return AntalVoksneIHusstand * 1.0;
         }
 
-        public double GetAntalTeenagerIHusstandKuvert()
+        public double? GetAntalTeenagerIHusstandKuvert()
         {
             return AntalTeenagerIHusstand * 0.5;
         }
 
-        public double GetAntalBarnIHusstandKuvert()
+        public double? GetAntalBarnIHusstandKuvert()
         {
             return AntalBarnIHusstand * 0.25;
         }
 
-        public double GetAntalBabyIHusstandKuvert()
+        public double? GetAntalBabyIHusstandKuvert()
         {
             return AntalBabyIHusstand * 0;
         }
 
-        public double GetPrisPerKuvert()
+        public double? GetPrisPerKuvert()
         {
             return TotalDagsPris / TotalAntalKuverter;
         }
 
-        public double GetPrisPerHusstand()
+        public double? GetPrisPerHusstand()
         {
             return GetPrisPerKuvert() * AntalKuverterIHusstand; //skal kunne bruges ved et bestemt husnummer 
         }
@@ -76,11 +75,11 @@ namespace Faellesspisning.Model
 
 
 
-        public int AntalVoksneIHusstand { get; set; }
-        public int AntalTeenagerIHusstand { get; set; }
-        public int AntalBarnIHusstand { get; set; }
+        public int? AntalVoksneIHusstand { get; set; }
+        public int? AntalTeenagerIHusstand { get; set; }
+        public int? AntalBarnIHusstand { get; set; }
 
-        public int AntalBabyIHusstand { get; set; }
+        public int? AntalBabyIHusstand { get; set; }
 
 
 

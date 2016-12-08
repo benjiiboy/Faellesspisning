@@ -41,16 +41,15 @@
                     <Grid.DataContext>
                         <Viewmodel:DeltagereViewmodel/>
                     </Grid.DataContext>
-                    <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="483" Margin="996,93,0,0" VerticalAlignment="Top" Width="124" BorderThickness="2" BorderBrush="Black" SelectionChanged="DeltagereDeltagerListview_SelectionChanged" ItemsSource="{Binding HList}" SelectedItem="{Binding selectedHus, Mode=TwoWay}"/>
+                    <ListView x:Name="DeltagereDeltagerListview" HorizontalAlignment="Left" Height="483" Margin="996,93,0,0" VerticalAlignment="Top" Width="217" BorderThickness="2" BorderBrush="Black" SelectionChanged="DeltagereDeltagerListview_SelectionChanged" ItemsSource="{Binding HList[0].HusNummer}" SelectedItem="{Binding selectedHus, Mode=TwoWay}"/>
                     <TextBlock x:Name="DeltagereOverskrift1" HorizontalAlignment="Left" Margin="996,48,0,0" TextWrapping="Wrap" Text="Deltager liste" VerticalAlignment="Top" Width="157" FontSize="20"/>
-                    <Button x:Name="DeltagereTilmeldKnap" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,446,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding AddHusCommand}"/>
+                    <Button x:Name="DeltagereTilmeldKnap" Content="Tilmeld" HorizontalAlignment="Left" Margin="121,446,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding AddHusCommand, Mode=TwoWay}"/>
                     <Button x:Name="DeltagereSletKnap" Content="Slet" HorizontalAlignment="Left" Margin="217,446,0,0" VerticalAlignment="Top" Height="50" Width="80" Command="{Binding SletHusCommand}"/>
-                    <Button x:Name="DeltagereRedigetKnap" Content="Rediger" HorizontalAlignment="Left" Margin="121,526,0,0" VerticalAlignment="Top" Height="50" Width="176"/>
-                    <TextBox x:Name="DeltagereHusNR" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="{Binding HList[0].HusNummer, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
-                    <TextBox x:Name="DeltagereAntalVoksne" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalVoksneIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Antal Voksne"/>
-                    <TextBox x:Name="DeltagereUng715" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalTeenagerIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 7-15 år"/>
-                    <TextBox x:Name="DeltagereUng36" HorizontalAlignment="Left" Margin="121,261,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalBarnIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 3-6 år"/>
-                    <TextBox x:Name="DeltagereBaby" HorizontalAlignment="Left" Margin="121,315,0,0" TextWrapping="Wrap" Text="{Binding HList[0].AntalBabyIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Under 3 år"/>
+                    <TextBox x:Name="DeltagereHusNR" HorizontalAlignment="Left" Margin="121,96,0,0" TextWrapping="Wrap" Text="{Binding Newhus.HusNummer, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Hus Nummer"/>
+                    <TextBox x:Name="DeltagereAntalVoksne" HorizontalAlignment="Left" Margin="121,150,0,0" TextWrapping="Wrap" Text="{Binding Newhus.AntalVoksneIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Antal Voksne"/>
+                    <TextBox x:Name="DeltagereUng715" HorizontalAlignment="Left" Margin="121,206,0,0" TextWrapping="Wrap" Text="{Binding Newhus.AntalTeenagerIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 7-15 år"/>
+                    <TextBox x:Name="DeltagereUng36" HorizontalAlignment="Left" Margin="121,261,0,0" TextWrapping="Wrap" Text="{Binding Newhus.AntalBarnIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Unge 3-6 år"/>
+                    <TextBox x:Name="DeltagereBaby" HorizontalAlignment="Left" Margin="121,315,0,0" TextWrapping="Wrap" Text="{Binding Newhus.AntalBabyIHusstand, Mode=TwoWay}" VerticalAlignment="Top" Width="176" PlaceholderText="Under 3 år"/>
                     <CheckBox x:Name="DeltagereHjælperMandag" Content="Mandag" HorizontalAlignment="Left" Margin="367,91,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperTirsdag" Content="Tirsdag" HorizontalAlignment="Left" Margin="367,118,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperOnsdag" Content="Onsdag" HorizontalAlignment="Left" Margin="367,145,0,0" VerticalAlignment="Top"/>
@@ -58,7 +57,7 @@
                     <CheckBox x:Name="DeltagereHjælperFredag" Content="Fredag" HorizontalAlignment="Left" Margin="367,199,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperLørdag" Content="Lørdag" HorizontalAlignment="Left" Margin="367,226,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperSøndag" Content="Søndag" HorizontalAlignment="Left" Margin="367,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.492,1.375" Checked="DeltagereHjælperSøndag_Checked"/>
-                    <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="333,446,0,0" TextWrapping="Wrap" Text="{Binding selectedHus, Mode=TwoWay}" VerticalAlignment="Top" Height="50" Width="458" SelectionChanged="textBlock1_SelectionChanged"/>
+                    <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="333,446,0,0" TextWrapping="Wrap" Text="{Binding selectedHus, Mode=TwoWay}" VerticalAlignment="Top" Height="50" Width="494" SelectionChanged="textBlock1_SelectionChanged"/>
                     <CheckBox x:Name="DeltagereHjælperMandag_Copy" Content="Mandag" HorizontalAlignment="Left" Margin="613,91,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperTirsdag_Copy" Content="Tirsdag" HorizontalAlignment="Left" Margin="613,118,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="DeltagereHjælperOnsdag_Copy" Content="Onsdag" HorizontalAlignment="Left" Margin="613,145,0,0" VerticalAlignment="Top"/>

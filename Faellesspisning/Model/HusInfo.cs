@@ -79,12 +79,7 @@ namespace Faellesspisning.Model
         public int AntalVoksneIHusstand { get; set; }
         public int AntalTeenagerIHusstand { get; set; }
         public int AntalBarnIHusstand { get; set; }
-
         public int AntalBabyIHusstand { get; set; }
-
-
-
-
         public string HusNummer { get; set; }
 
 
@@ -97,12 +92,12 @@ namespace Faellesspisning.Model
 
         public override string ToString()
         {
-            return "Hus: " + HusNummer +
+            return "Hus: " + HusNummer;
             ", " + "Voksne: " + AntalVoksneIHusstand +
             ", " + "Teenagere: " + AntalTeenagerIHusstand +
             ", " + "Børn: " + AntalBarnIHusstand +
             ", " + "Baby: " + AntalBabyIHusstand;
-            }
+        }
         // vi skal havde lavet en metode (selectedhus) som kan vælge et hus og se hvor mange der er i den valgte husstand
 
 

@@ -82,9 +82,8 @@ namespace Faellesspisning.Viewmodel
             temphusinfo.AntalVoksneIHusstand = Newhus.AntalVoksneIHusstand;
              
 
-            DeltagerListe.Add(temphusinfo);
-
-            HList.Remove(temphusinfo);
+            HList.Add(temphusinfo);
+            
         }
 
         public void Slethus()
@@ -100,6 +99,7 @@ namespace Faellesspisning.Viewmodel
             AddHusCommand = new RelayCommand(AddNewHus);
             SletHusCommand = new RelayCommand(Slethus);
             SletAlleHuseCommand = new RelayCommand(SletAlleHuse);
+            Newhus = new Model.HusInfo();
 
             localfolder = ApplicationData.Current.LocalFolder;
         }

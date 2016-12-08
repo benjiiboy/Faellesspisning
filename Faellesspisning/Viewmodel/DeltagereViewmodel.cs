@@ -30,7 +30,7 @@ namespace Faellesspisning.Viewmodel
         public RelayCommand SletAlleHuseCommand { get; set; }
 
 
-        private Model.HusInfo SelectedElev;
+       
 
         StorageFolder localfolder = null;
 

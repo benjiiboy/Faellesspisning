@@ -41,5 +41,20 @@ namespace Faellesspisning
         {
 
         }
+
+        private void textBlock1_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeltagereHjælperSøndag_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock2_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
